@@ -1,0 +1,19 @@
+{
+    "name": "udemy_clone_ui",
+    "version": "1.0.0",
+    "description": "Static theme of the udemy clone project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "Rakhsanth and Swami",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "concat": "^1.0.3",
+        "node-sass": "^4.14.1",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^7.1.2"
+    }
+}
