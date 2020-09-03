@@ -12,7 +12,9 @@ body {
 .test-header {
   color: black;
   background-color: #d3611f;
-  margin: 0 auto;
   width: 11%;
   letter-spacing: 1rem;
   border-radius: 5px; }
+
+.center {
+  margin: 0 auto; }
