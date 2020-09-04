@@ -1,0 +1,23 @@
+.top-header-navbar {
+    position: relative;
+
+    &-title {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    &-dropdown {
+        position: absolute;
+        height: 0.1px;
+        width: 0.1px;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    &:hover &-dropdown {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        overflow: visible;
+    }
+}
