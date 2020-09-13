@@ -39,5 +39,63 @@
             <button class="btn">Log in</button>
             <button class="btn">Sign up</button>
         </header>
+        <main class="main-conatiner">
+            <div id="category-tabs" class="category-tabs">
+                <a
+                    href="#"
+                    id="category-tabs-tab"
+                    class="category-tabs-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-tab-text">Design</span></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-tab"
+                    class="category-tabs-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-tab-text">Development</span></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-tab"
+                    class="category-tabs-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-tab-text"
+                        >IT & Software</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-tab"
+                    class="category-tabs-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-tab-text"
+                        >Digital Marketing</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-tab"
+                    class="category-tabs-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-tab-text">Business</span></a
+                >
+            </div>
+            <div class="top-catagories-container">
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+                <div class="top-catagories-card"></div>
+            </div>
+        </main>
+        <script>
+            const handleTabs = (event) => {
+                event.preventDefault();
+            };
+        </script>
     </body>
 </html>

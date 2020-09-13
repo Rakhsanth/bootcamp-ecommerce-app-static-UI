@@ -46,3 +46,48 @@ body {
     width: 100%;
     opacity: 1;
     overflow: visible; }
+
+.top-catagories-card {
+  height: 15rem;
+  width: 15rem;
+  background-color: orangered;
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.top-catagories-container {
+  grid-row: 5/6;
+  grid-column-start: col-start 1;
+  grid-column-end: col-end 11;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+
+.main-conatiner {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: 60vh 5rem 40vh repeat(3, min-content) 25vh;
+  grid-template-columns: repeat(10, [col-start] minmax(min-content, 15rem) [col-end]);
+  row-gap: 1rem;
+  column-gap: 1rem; }
+
+.category-tabs {
+  margin-left: 3rem;
+  grid-row: 2 / 3;
+  grid-column: col-start 1 / col-end 11;
+  display: flex;
+  border-bottom: 1px solid #dcdacb; }
+  .category-tabs-tab {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #73726c;
+    transform-origin: center; }
+    .category-tabs-tab:not(:nth-child(1)) {
+      margin: 0 1rem;
+      padding: 0.5rem; }
+    .category-tabs-tab:active, .category-tabs-tab:focus {
+      color: #3c3b37;
+      border-bottom: 1px solid; }
+    .category-tabs-tab-text {
+      font-size: 1.5rem;
+      font-weight: bold; }
