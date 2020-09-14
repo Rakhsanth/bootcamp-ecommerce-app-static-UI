@@ -17,4 +17,50 @@
         background-position: center;
         background-size: contain;
     }
+
+    &-search {
+        height: 60%;
+        width: 40%;
+        background-color: $light-grey-search-bar;
+        border: 2px solid $light-grey-search-bar-border;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &-icons {
+            height: 75%;
+            width: 10%;
+            // background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-icon {
+                width: 2.5rem;
+                height: 2.5rem;
+                fill: $text-light;
+                cursor: pointer;
+            }
+        }
+
+        &-bar {
+            padding-left: 1rem;
+            height: 80%;
+            width: 80%;
+
+            &-input {
+                height: 100%;
+                width: 100%;
+                background-color: $light-grey-search-bar;
+                outline: none;
+                border: none;
+
+                &::-webkit-input-placeholder {
+                    margin: 0.5rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
 }

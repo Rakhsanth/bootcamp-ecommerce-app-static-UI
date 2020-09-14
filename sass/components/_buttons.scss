@@ -1,0 +1,35 @@
+.btn {
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+
+    &-primary {
+        color: $white-background;
+        background-color: $primary-btn-color;
+        border: 2px solid $primary-btn-color;
+
+        &:hover {
+            background-color: $primary-btn-hover-color;
+            border: 2px solid black;
+        }
+    }
+
+    &-secondary {
+        color: $btn-border-blue-light;
+        background-color: $white-background;
+        border: 2px solid $btn-border-blue-light;
+
+        &:hover {
+            color: black;
+            border: 2px solid black;
+        }
+    }
+
+    &-md {
+        height: 4rem;
+        width: 10rem;
+    }
+}
