@@ -91,6 +91,9 @@
                     ><span class="category-tabs-tab-text">Business</span></a
                 >
             </div>
+            <div class="categories">
+                <!-- TO be populated by JS -->
+            </div>
             <div class="top-catagories-container">
                 <div class="top-catagories-card">
                     <img
@@ -162,6 +165,321 @@
             const handleTabs = (event) => {
                 event.preventDefault();
             };
+
+            function removeAllChildNodes(parent) {
+                while (parent.firstChild) {
+                    parent.removeChild(parent.firstChild);
+                }
+            }
+
+            const categoriesDiv = document.querySelector('.categories');
+            removeAllChildNodes(categoriesDiv);
+
+            function tiny(x) {
+                if (x.matches) {
+                    // If media query matches
+                    removeAllChildNodes(categoriesDiv);
+                    for (let i = 1; i <= 2; i++) {
+                        let card = document.createElement('div');
+                        card.classList.add('categories-card');
+                        card.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
+                        categoriesDiv.appendChild(card);
+                    }
+                }
+            }
+            function small(x) {
+                if (x.matches) {
+                    // If media query matches
+                    removeAllChildNodes(categoriesDiv);
+                    for (let i = 1; i <= 3; i++) {
+                        let card = document.createElement('div');
+                        card.classList.add('categories-card');
+                        card.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
+                        categoriesDiv.appendChild(card);
+                    }
+                }
+            }
+            function medium(x) {
+                if (x.matches) {
+                    // If media query matches
+                    removeAllChildNodes(categoriesDiv);
+                    for (let i = 1; i <= 4; i++) {
+                        let card = document.createElement('div');
+                        card.classList.add('categories-card');
+                        card.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
+                        categoriesDiv.appendChild(card);
+                    }
+                }
+            }
+            function large(x) {
+                if (x.matches) {
+                    // If media query matches
+                    removeAllChildNodes(categoriesDiv);
+                    for (let i = 1; i <= 5; i++) {
+                        let card = document.createElement('div');
+                        card.classList.add('categories-card');
+                        card.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
+                        categoriesDiv.appendChild(card);
+                    }
+                }
+            }
+            function larger(x) {
+                if (x.matches) {
+                    // If media query matches
+                    removeAllChildNodes(categoriesDiv);
+                    for (let i = 1; i <= 5; i++) {
+                        let card = document.createElement('div');
+                        card.classList.add('categories-card');
+                        card.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
+                        categoriesDiv.appendChild(card);
+                    }
+                }
+            }
+
+            let tinyScreen = window.matchMedia('(max-width: 40em)');
+            tiny(tinyScreen); // Call listener function at run time
+            tinyScreen.addListener(tiny); // Attach listener function on state changes
+
+            let smallScreen = window.matchMedia('(max-width: 55em)');
+            small(smallScreen); // Call listener function at run time
+            smallScreen.addListener(small); // Attach listener function on state changes
+
+            let mediumScreen = window.matchMedia('(max-width: 70em)');
+            medium(mediumScreen); // Call listener function at run time
+            mediumScreen.addListener(medium); // Attach listener function on state changes
+
+            let largeScreen = window.matchMedia('(max-width: 85em)');
+            large(largeScreen); // Call listener function at run time
+            largeScreen.addListener(large); // Attach listener function on state changes
+
+            let largerScreen = window.matchMedia('(min-width: 85em)');
+            larger(largerScreen); // Call listener function at run time
+            largerScreen.addListener(larger); // Attach listener function on state changes
         </script>
     </body>
 </html>
