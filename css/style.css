@@ -125,7 +125,7 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease-out; }
     .top-header-navbar-dropdown-list-item {
-      margin: 1rem 0;
+      margin: 1rem 0rem;
       padding: 1rem 2rem;
       list-style: none; }
       .top-header-navbar-dropdown-list-item-link {
