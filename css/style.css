@@ -1,13 +1,26 @@
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 80%; }
 
 body {
   box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.login-container input placeholder {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #6886bf; }
 
 .center {
   margin: 0 auto; }
@@ -35,6 +48,14 @@ body {
   .btn-md {
     height: 4rem;
     width: 10rem; }
+  .btn-loginpage {
+    height: 45px;
+    width: 100px;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
+      color: black;
+      border: 2px solid black; }
 
 .top-header {
   display: flex;
@@ -52,7 +73,11 @@ body {
     background-image: url("../img/logos/bootcamp_logo.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; }
+    background-size: contain;
+    animation-name: fadein;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 3; }
   .top-header-search {
     height: 50%;
     width: 40%;
@@ -217,3 +242,53 @@ body {
     .category-tabs-tab-text {
       font-size: 1.5rem;
       font-weight: bold; }
+
+.btn {
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer; }
+  .btn:focus {
+    outline: none; }
+  .btn-primary {
+    color: white;
+    background-color: #0f7c90;
+    border: 2px solid #0f7c90; }
+    .btn-primary:hover {
+      background-color: #094c59;
+      border: 2px solid black; }
+  .btn-secondary {
+    color: #2896a9;
+    background-color: white;
+    border: 2px solid #2896a9; }
+    .btn-secondary:hover {
+      color: black;
+      border: 2px solid black; }
+  .btn-md {
+    height: 4rem;
+    width: 10rem; }
+  .btn-loginpage {
+    height: 45px;
+    width: 100px;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
+      color: black;
+      border: 2px solid black; }
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50vh;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%); }
+  .login-container input {
+    border: 3px #8a92a3 solid;
+    padding: 1.5em;
+    width: 350px;
+    height: 2em;
+    margin: 10px; }
+  .login-container-button {
+    padding: 1em; }
+  .login-container a {
+    color: white; }
