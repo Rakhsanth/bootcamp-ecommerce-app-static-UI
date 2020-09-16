@@ -120,7 +120,10 @@ body {
     width: 0.1px;
     background-color: white;
     overflow: hidden;
-    opacity: 0; }
+    opacity: 0;
+    transition: width, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out; }
     .top-header-navbar-dropdown-list-item {
       margin: 1rem 0;
       padding: 1rem 2rem;
@@ -197,7 +200,8 @@ body {
   border: 1px solid #dcdacb;
   border-radius: 0.5rem;
   cursor: pointer;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: transform 0.5s ease-out; }
   .top-catagories-card:hover {
     transform: scale(1.05);
     box-shadow: -0.5rem 0.5rem 2rem #dcdacb; }

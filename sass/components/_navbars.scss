@@ -20,6 +20,9 @@
         background-color: $white-background;
         overflow: hidden;
         opacity: 0;
+        transition: width, opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
 
         &-list {
             &-item {
