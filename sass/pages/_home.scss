@@ -13,11 +13,13 @@
     grid-row: 2 / 3;
     grid-column: col-start 1 / col-end 11;
     display: flex;
+    justify-content: center;
     border-bottom: 1px solid $line-seperator-color;
 
     &-tab {
         display: flex;
         align-items: center;
+        padding: 0.5rem 0;
         height: 100%;
         text-decoration: none;
         color: $text-light;
@@ -38,6 +40,16 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-right: 5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: auto;
     }
 }
 

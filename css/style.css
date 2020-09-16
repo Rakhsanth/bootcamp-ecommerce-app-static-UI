@@ -263,10 +263,12 @@ body {
   grid-row: 2 / 3;
   grid-column: col-start 1 / col-end 11;
   display: flex;
+  justify-content: center;
   border-bottom: 1px solid #dcdacb; }
   .category-tabs-courses-tab {
     display: flex;
     align-items: center;
+    padding: 0.5rem 0;
     height: 100%;
     text-decoration: none;
     color: #73726c;
@@ -280,6 +282,14 @@ body {
     .category-tabs-courses-tab-text {
       font-size: 1.5rem;
       font-weight: bold; }
+  .category-tabs-courses-title {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: auto; }
 
 .category-tabs-bootcamps {
   margin-left: 3rem;
