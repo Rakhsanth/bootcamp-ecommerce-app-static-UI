@@ -201,7 +201,7 @@ a {
         .top-header-navbar-dropdown-list-item-link:hover {
           color: #2896a9; }
   .top-header-navbar:hover .top-header-navbar-dropdown {
-    height: 50vh;
+    height: 60vh;
     width: 20rem;
     opacity: 1;
     overflow: visible;
