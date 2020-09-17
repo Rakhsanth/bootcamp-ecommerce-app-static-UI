@@ -1,10 +1,12 @@
 .main-conatiner {
     margin-top: 10rem;
     display: grid;
-    grid-template-rows: 60vh 5rem minmax(40vh, min-content) repeat(
+    grid-template-rows:
+        65vh 5rem minmax(40vh, min-content) 5rem minmax(40vh, min-content) repeat(
             3,
             min-content
-        ) 25vh;
+        )
+        25vh;
     grid-template-columns: repeat(
         10,
         [col-start] minmax(min-content, 15rem) [col-end]

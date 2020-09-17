@@ -45,6 +45,10 @@
                 height: 2.5rem;
                 fill: $text-light;
                 cursor: pointer;
+
+                &:active {
+                    fill: $btn-border-blue-light;
+                }
             }
         }
 
@@ -64,7 +68,19 @@
                     margin: 0.5rem;
                     padding: 1rem;
                 }
+
+                &:active .top-header-search {
+                    border: 2px solid $btn-border-blue-light;
+                }
+
+                &:focus .top-header-search {
+                    border: 2px solid $btn-border-blue-light;
+                }
             }
+        }
+
+        &:active {
+            border: 2px solid $btn-border-blue-light;
         }
     }
 }

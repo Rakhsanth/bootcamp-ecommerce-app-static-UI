@@ -14,19 +14,59 @@
                 <div class="top-header-navbar-dropdown">
                     <ul class="top-header-navbar-dropdown-list">
                         <li class="top-header-navbar-dropdown-list-item">
-                            Development
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
                         </li>
                         <li class="top-header-navbar-dropdown-list-item">
-                            Design
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
                         </li>
                         <li class="top-header-navbar-dropdown-list-item">
-                            Data Science
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
                         </li>
                         <li class="top-header-navbar-dropdown-list-item">
-                            Digital Marketing
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
                         </li>
                         <li class="top-header-navbar-dropdown-list-item">
-                            Finance
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -50,118 +90,211 @@
             <button class="btn btn-primary btn-md">Sign up</button>
         </header>
         <main class="main-conatiner">
-            <div id="category-tabs" class="category-tabs">
+            <section class="hero-section">
+                <img
+                    src="./img/hero-image.jpg"
+                    alt="hero-image"
+                    class="hero-section-img"
+                />
+            </section>
+            <div id="category-tabs" class="category-tabs-courses">
                 <a
                     href="#"
-                    id="category-tabs-tab"
-                    class="category-tabs-tab"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
                     onclick="handleTabs(event)"
-                    ><span class="category-tabs-tab-text">Design</span></a
+                    ><span class="category-tabs-courses-tab-text"
+                        >Design</span
+                    ></a
                 >
                 <a
                     href="#"
-                    id="category-tabs-tab"
-                    class="category-tabs-tab"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
                     onclick="handleTabs(event)"
-                    ><span class="category-tabs-tab-text">Development</span></a
+                    ><span class="category-tabs-courses-tab-text"
+                        >Development</span
+                    ></a
                 >
                 <a
                     href="#"
-                    id="category-tabs-tab"
-                    class="category-tabs-tab"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
                     onclick="handleTabs(event)"
-                    ><span class="category-tabs-tab-text"
+                    ><span class="category-tabs-courses-tab-text"
                         >IT & Software</span
                     ></a
                 >
                 <a
                     href="#"
-                    id="category-tabs-tab"
-                    class="category-tabs-tab"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
                     onclick="handleTabs(event)"
-                    ><span class="category-tabs-tab-text"
+                    ><span class="category-tabs-courses-tab-text"
                         >Digital Marketing</span
                     ></a
                 >
                 <a
                     href="#"
-                    id="category-tabs-tab"
-                    class="category-tabs-tab"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
                     onclick="handleTabs(event)"
-                    ><span class="category-tabs-tab-text">Business</span></a
+                    ><span class="category-tabs-courses-tab-text"
+                        >Business</span
+                    ></a
                 >
+                <h4 class="category-tabs-courses-title">Courses</h4>
             </div>
             <div class="categories">
                 <!-- TO be populated by JS logic -->
             </div>
+            <div id="category-tabs" class="category-tabs-bootcamps">
+                <a
+                    href="#"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-courses-tab-text"
+                        >Design</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-courses-tab-text"
+                        >Development</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-courses-tab-text"
+                        >IT & Software</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-courses-tab-text"
+                        >Digital Marketing</span
+                    ></a
+                >
+                <a
+                    href="#"
+                    id="category-tabs-courses-tab"
+                    class="category-tabs-courses-tab"
+                    onclick="handleTabs(event)"
+                    ><span class="category-tabs-courses-tab-text"
+                        >Business</span
+                    ></a
+                >
+                <h4 class="category-tabs-courses-title">Bootcamps</h4>
+            </div>
+            <div class="categories-bootcamps">
+                <!-- TO be populated by JS logic -->
+            </div>
             <div class="top-catagories-container">
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">Design</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">Development</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">IT & Software</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">Data Analytics</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">SEO</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">Business</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">ML & AI</h5>
-                </div>
-                <div class="top-catagories-card">
-                    <img
-                        src="./img/courseImages/course.png"
-                        alt=""
-                        class="top-catagories-card-img"
-                    />
-                    <h5 class="top-catagories-card-title">Programming</h5>
+                <h3 class="h3-heading top-catagories-heading">
+                    Top Categories
+                </h3>
+                <div class="top-catagories-cards">
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">Design</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">Development</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">IT & Software</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">
+                            Data Analytics
+                        </h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">SEO</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">Business</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">ML & AI</h5>
+                    </div>
+                    <div class="top-catagories-card">
+                        <img
+                            src="./img/courseImages/course.png"
+                            alt=""
+                            class="top-catagories-card-img"
+                        />
+                        <h5 class="top-catagories-card-title">Programming</h5>
+                    </div>
                 </div>
             </div>
         </main>
         <script>
+            const btnBorderBlueLight = 'rgb(40, 150, 169)';
+            const lightGreySearchBarBorder = 'rgb(152, 149, 134)';
+
+            const headerSearchInput = document.querySelector(
+                '.top-header-search-bar-input'
+            );
+            headerSearchInput.addEventListener('focus', searchInputFocus);
+            headerSearchInput.addEventListener('focusout', searchInputFocusOut);
+            function searchInputFocus() {
+                const headerSearchArea = document.querySelector(
+                    '.top-header-search'
+                );
+                headerSearchArea.style.border = `2px solid ${btnBorderBlueLight}`;
+            }
+            function searchInputFocusOut() {
+                const headerSearchArea = document.querySelector(
+                    '.top-header-search'
+                );
+                headerSearchArea.style.border = `2px solid ${lightGreySearchBarBorder}`;
+            }
+
             const handleTabs = (event) => {
                 event.preventDefault();
             };
@@ -173,15 +306,23 @@
             }
 
             const categoriesDiv = document.querySelector('.categories');
+            const categoriesBootcampDiv = document.querySelector(
+                '.categories-bootcamps'
+            );
             removeAllChildNodes(categoriesDiv);
+            removeAllChildNodes(categoriesBootcampDiv);
 
             function tiny(x) {
                 if (x.matches) {
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
+                    removeAllChildNodes(categoriesBootcampDiv);
                     for (let i = 1; i <= 2; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
+
+                        let bootcampCard = document.createElement('div');
+                        bootcampCard.classList.add('categories-card');
                         card.innerHTML = `
                             <img
                                 src="./img//courseImages/category-img.jpg"
@@ -228,7 +369,54 @@
                             </div>
                             <span class="categories-card-price">&#8377; 700</span>
                     `;
+                        bootcampCard.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
                         categoriesDiv.appendChild(card);
+                        categoriesBootcampDiv.appendChild(bootcampCard);
                     }
                 }
             }
@@ -236,9 +424,13 @@
                 if (x.matches) {
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
+                    removeAllChildNodes(categoriesBootcampDiv);
                     for (let i = 1; i <= 3; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
+
+                        let bootcampCard = document.createElement('div');
+                        bootcampCard.classList.add('categories-card');
                         card.innerHTML = `
                             <img
                                 src="./img//courseImages/category-img.jpg"
@@ -285,7 +477,54 @@
                             </div>
                             <span class="categories-card-price">&#8377; 700</span>
                     `;
+                        bootcampCard.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
                         categoriesDiv.appendChild(card);
+                        categoriesBootcampDiv.appendChild(bootcampCard);
                     }
                 }
             }
@@ -293,9 +532,13 @@
                 if (x.matches) {
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
+                    removeAllChildNodes(categoriesBootcampDiv);
                     for (let i = 1; i <= 4; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
+
+                        let bootcampCard = document.createElement('div');
+                        bootcampCard.classList.add('categories-card');
                         card.innerHTML = `
                             <img
                                 src="./img//courseImages/category-img.jpg"
@@ -342,7 +585,54 @@
                             </div>
                             <span class="categories-card-price">&#8377; 700</span>
                     `;
+                        bootcampCard.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
                         categoriesDiv.appendChild(card);
+                        categoriesBootcampDiv.appendChild(bootcampCard);
                     }
                 }
             }
@@ -350,9 +640,13 @@
                 if (x.matches) {
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
+                    removeAllChildNodes(categoriesBootcampDiv);
                     for (let i = 1; i <= 5; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
+
+                        let bootcampCard = document.createElement('div');
+                        bootcampCard.classList.add('categories-card');
                         card.innerHTML = `
                             <img
                                 src="./img//courseImages/category-img.jpg"
@@ -399,7 +693,54 @@
                             </div>
                             <span class="categories-card-price">&#8377; 700</span>
                     `;
+                        bootcampCard.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
                         categoriesDiv.appendChild(card);
+                        categoriesBootcampDiv.appendChild(bootcampCard);
                     }
                 }
             }
@@ -407,9 +748,13 @@
                 if (x.matches) {
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
+                    removeAllChildNodes(categoriesBootcampDiv);
                     for (let i = 1; i <= 5; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
+
+                        let bootcampCard = document.createElement('div');
+                        bootcampCard.classList.add('categories-card');
                         card.innerHTML = `
                             <img
                                 src="./img//courseImages/category-img.jpg"
@@ -456,7 +801,54 @@
                             </div>
                             <span class="categories-card-price">&#8377; 700</span>
                     `;
+                        bootcampCard.innerHTML = `
+                            <img
+                                src="./img//courseImages/category-img.jpg"
+                                alt="best seller course"
+                                class="categories-card-img"
+                            />
+                            <h5 class="categories-card-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Nihil, quos?
+                            </h5>
+                            <span class="categories-card-author">Some Name</span>
+                            <div class="categories-card-rating">
+                                <span class="categories-card-rating-rate">4.5</span>
+                                <div class="categories-card-rating stars">
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-full"
+                                        ></use>
+                                    </svg>
+                                    <svg class="categories-card-rating-stars-star">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-star-half"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <span class="categories-card-rating-count"
+                                    >(12000)</span
+                                >
+                            </div>
+                            <span class="categories-card-price">&#8377; 700</span>
+                    `;
                         categoriesDiv.appendChild(card);
+                        categoriesBootcampDiv.appendChild(bootcampCard);
                     }
                 }
             }
