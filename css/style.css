@@ -15,7 +15,6 @@ html {
 body {
   box-sizing: border-box; }
 
-
 a {
   text-decoration: none; }
 
@@ -29,7 +28,6 @@ a {
 
 .top-catagories-heading {
   padding: 2rem 0; }
-
 
 .center {
   margin: 0 auto; }
@@ -68,12 +66,10 @@ a {
   .btn-md {
     height: 4rem;
     width: 10rem; }
-
   .btn-lg {
     height: 5rem;
     width: 25rem;
     font-size: 2rem; }
-
   .btn-loginpage {
     height: 45px;
     width: 100px;
@@ -82,7 +78,6 @@ a {
     .btn-loginpage:hover {
       color: black;
       border: 2px solid black; }
-
 
 .top-header {
   display: flex;
@@ -236,11 +231,11 @@ a {
     width: 35rem;
     height: 45rem; }
   .categories-card:hover:nth-last-child(1) .categories-card-details-container {
-    left: -180%;
+    left: -225%;
     width: 35rem;
     height: 45rem; }
   .categories-card:hover:nth-last-child(2) .categories-card-details-container {
-    left: -180%;
+    left: -225%;
     width: 35rem;
     height: 45rem; }
   .categories-card-img {
@@ -401,9 +396,27 @@ a {
     .category-tabs-courses-tab-text {
       font-size: 1.5rem;
       font-weight: bold; }
+  .category-tabs-courses-title {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: auto; }
 
+.category-tabs-bootcamps {
+  margin-left: 3rem;
+  grid-row: 4 / 5;
+  grid-column: col-start 1 / col-end 11;
+  display: flex;
+  border-bottom: 1px solid #dcdacb; }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   font-weight: bold;
   border-radius: 0.5rem;
   cursor: pointer; }
@@ -423,9 +436,20 @@ a {
     .btn-secondary:hover {
       color: black;
       border: 2px solid black; }
+  .btn-tertiary {
+    color: white;
+    background-color: #be5a0e; }
+    .btn-tertiary:hover {
+      background-color: #ea5252; }
+  .btn-text {
+    font-weight: bold; }
   .btn-md {
     height: 4rem;
     width: 10rem; }
+  .btn-lg {
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem; }
   .btn-loginpage {
     height: 45px;
     width: 100px;
@@ -452,20 +476,3 @@ a {
     padding: 1em; }
   .login-container a {
     color: white; }
-
-  .category-tabs-courses-title {
-    display: flex;
-    align-items: center;
-    margin-right: 5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: auto; }
-
-.category-tabs-bootcamps {
-  margin-left: 3rem;
-  grid-row: 4 / 5;
-  grid-column: col-start 1 / col-end 11;
-  display: flex;
-  border-bottom: 1px solid #dcdacb; }
-
