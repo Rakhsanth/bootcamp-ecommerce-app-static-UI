@@ -1,13 +1,25 @@
-.category-tabs {
+.hero-section {
+    grid-row: 1 / 2;
+    grid-column: col-start 1 / col-end 11;
+
+    &-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.category-tabs-courses {
     margin-left: 3rem;
     grid-row: 2 / 3;
     grid-column: col-start 1 / col-end 11;
     display: flex;
+    justify-content: center;
     border-bottom: 1px solid $line-seperator-color;
 
     &-tab {
         display: flex;
         align-items: center;
+        padding: 0.5rem 0;
         height: 100%;
         text-decoration: none;
         color: $text-light;
@@ -29,4 +41,22 @@
             font-weight: bold;
         }
     }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-right: 5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: auto;
+    }
+}
+
+.category-tabs-bootcamps {
+    margin-left: 3rem;
+    grid-row: 4 / 5;
+    grid-column: col-start 1 / col-end 11;
+    display: flex;
+    border-bottom: 1px solid $line-seperator-color;
 }
