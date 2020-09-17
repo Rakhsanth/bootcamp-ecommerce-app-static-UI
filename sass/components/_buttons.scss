@@ -32,4 +32,16 @@
         height: 4rem;
         width: 10rem;
     }
+
+    &-loginpage{
+        height : 45px;
+        width : 100px;
+        background-color:$btn-login-background;
+        color: $white-background;
+
+        &:hover {
+            color: black;
+            border: 2px solid black;
+        }
+    }
 }
