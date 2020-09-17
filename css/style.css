@@ -29,6 +29,13 @@ a {
 .top-catagories-heading {
   padding: 2rem 0; }
 
+
+.login-container-facebook {
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  color: #ffffff; }
+
+
+
 .center {
   margin: 0 auto; }
 
@@ -71,13 +78,34 @@ a {
     width: 25rem;
     font-size: 2rem; }
   .btn-loginpage {
-    height: 45px;
-    width: 100px;
+    width: 350px;
+    height: 3em;
+    margin: 10px;
     background-color: #ec5252;
     color: white; }
     .btn-loginpage:hover {
       color: black;
       border: 2px solid black; }
+  .btn-facebook-login {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 3rem;
+    background-color: #1a538a; }
+    .btn-facebook-login:hover {
+      border: 2px solid black;
+      background-color: #1a5382; }
+  .btn-google-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 350px;
+    height: 3rem;
+    margin: 1rem;
+    background-color: white; }
+    .btn-google-login:hover {
+      border: black solid 2px;
+      background-color: #ebebeb; }
 
 .top-header {
   display: flex;
@@ -451,20 +479,41 @@ a {
     width: 25rem;
     font-size: 2rem; }
   .btn-loginpage {
-    height: 45px;
-    width: 100px;
+    width: 350px;
+    height: 3em;
+    margin: 10px;
     background-color: #ec5252;
     color: white; }
     .btn-loginpage:hover {
       color: black;
       border: 2px solid black; }
+  .btn-facebook-login {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 3rem;
+    background-color: #1a538a; }
+    .btn-facebook-login:hover {
+      border: 2px solid black;
+      background-color: #1a5382; }
+  .btn-google-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 350px;
+    height: 3rem;
+    margin: 1rem;
+    background-color: white; }
+    .btn-google-login:hover {
+      border: black solid 2px;
+      background-color: #ebebeb; }
 
 .login-container {
   display: flex;
   flex-direction: column;
-  margin-top: 50vh;
+  margin-top: 55vh;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transform: translateY(-50%); }
   .login-container input {
     border: 3px #8a92a3 solid;
@@ -472,7 +521,57 @@ a {
     width: 350px;
     height: 2em;
     margin: 10px; }
+
+    .login-container input :invalid {
+      background-color: #ec5252; }
+  .login-container-thirdparty {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+  .login-container-form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center; }
+  .login-container a {
+    color: white; }
+  .login-container-facebook a {
+    padding-right: 100px;
+    margin-top: 9px; }
+  .login-container-facebook img {
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 20px;
+    margin-top: 8px; }
+  .login-container-google a {
+    color: black;
+    padding-right: 134px;
+    margin-top: 10px; }
+  .login-container-google img {
+    height: 1.5rem;
+    width: 2.2rem;
+    margin-top: 8px;
+    margin-left: 14px; }
+  .login-container-forgotpw {
+    position: relative;
+    margin-top: 1rem; }
+    .login-container-forgotpw a {
+      color: #008c9f; }
+  .login-container-signup {
+    position: relative;
+    margin-top: 2.5rem; }
+    .login-container-signup a {
+      color: #008cbf; }
+  .login-container-message {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-right: 12rem; }
+
   .login-container-button {
     padding: 1em; }
   .login-container a {
     color: white; }
+
