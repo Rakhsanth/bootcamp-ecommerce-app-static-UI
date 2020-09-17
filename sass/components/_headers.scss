@@ -17,6 +17,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        animation-name: fadein;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 3;
     }
 
     &-search {

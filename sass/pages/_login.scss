@@ -1,0 +1,32 @@
+@import '../components/buttons';
+
+.login-container{
+   display: flex;
+   flex-direction: column;
+   margin-top: 50vh;
+   align-items: center;
+   justify-content: space-between;
+   transform: translateY(-50%);
+
+
+
+input{
+    border: 3px rgb(138,146,163) solid;
+    padding: 1.5em;
+    width: 350px;
+    height: 2em;
+    margin: 10px;
+
+}
+
+&-button{
+    padding: 1em;
+    
+}
+
+a{
+    color: $white-background;
+}
+
+}
+
