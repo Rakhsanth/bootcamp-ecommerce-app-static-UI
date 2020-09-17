@@ -29,23 +29,22 @@ a {
 .top-catagories-heading {
   padding: 2rem 0; }
 
-
 .login-container-facebook {
   font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   color: #ffffff; }
 
-
-
 .center {
   margin: 0 auto; }
 
+.center-h-v {
+  margin-top: 50%;
+  margin-left: 50%; }
+
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
   font-weight: bold;
   border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
   cursor: pointer; }
   .btn:focus {
     outline: none; }
@@ -55,7 +54,11 @@ a {
     border: 2px solid #0f7c90; }
     .btn-primary:hover {
       background-color: #094c59;
-      border: 2px solid black; }
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      cursor: pointer; }
+      .btn-primary:hover:focus {
+        outline: none; }
   .btn-secondary {
     color: #2896a9;
     background-color: white;
@@ -68,8 +71,10 @@ a {
     background-color: #be5a0e; }
     .btn-tertiary:hover {
       background-color: #ea5252; }
-  .btn-text {
-    font-weight: bold; }
+  .btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .btn-md {
     height: 4rem;
     width: 10rem; }
@@ -77,6 +82,8 @@ a {
     height: 5rem;
     width: 25rem;
     font-size: 2rem; }
+  .btn-text {
+    font-weight: bold; }
   .btn-loginpage {
     width: 350px;
     height: 3em;
@@ -103,9 +110,14 @@ a {
     height: 3rem;
     margin: 1rem;
     background-color: white; }
-    .btn-google-login:hover {
+  .btn-loginpage {
+    height: 45px;
+    width: 95%;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
       border: black solid 2px;
-      background-color: #ebebeb; }
+      background-color: #992337; }
 
 .top-header {
   display: flex;
@@ -441,12 +453,10 @@ a {
   border-bottom: 1px solid #dcdacb; }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
   font-weight: bold;
   border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
   cursor: pointer; }
   .btn:focus {
     outline: none; }
@@ -456,7 +466,11 @@ a {
     border: 2px solid #0f7c90; }
     .btn-primary:hover {
       background-color: #094c59;
-      border: 2px solid black; }
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      cursor: pointer; }
+      .btn-primary:hover:focus {
+        outline: none; }
   .btn-secondary {
     color: #2896a9;
     background-color: white;
@@ -469,8 +483,10 @@ a {
     background-color: #be5a0e; }
     .btn-tertiary:hover {
       background-color: #ea5252; }
-  .btn-text {
-    font-weight: bold; }
+  .btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .btn-md {
     height: 4rem;
     width: 10rem; }
@@ -478,6 +494,8 @@ a {
     height: 5rem;
     width: 25rem;
     font-size: 2rem; }
+  .btn-text {
+    font-weight: bold; }
   .btn-loginpage {
     width: 350px;
     height: 3em;
@@ -504,9 +522,14 @@ a {
     height: 3rem;
     margin: 1rem;
     background-color: white; }
-    .btn-google-login:hover {
+  .btn-loginpage {
+    height: 45px;
+    width: 95%;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
       border: black solid 2px;
-      background-color: #ebebeb; }
+      background-color: #992337; }
 
 .login-container {
   display: flex;
@@ -521,7 +544,6 @@ a {
     width: 350px;
     height: 2em;
     margin: 10px; }
-
     .login-container input :invalid {
       background-color: #ec5252; }
   .login-container-thirdparty {
@@ -569,9 +591,3 @@ a {
     position: relative;
     margin-bottom: 3rem;
     margin-right: 12rem; }
-
-  .login-container-button {
-    padding: 1em; }
-  .login-container a {
-    color: white; }
-
