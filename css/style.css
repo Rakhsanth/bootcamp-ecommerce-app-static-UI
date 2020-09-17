@@ -29,9 +29,12 @@ a {
 .top-catagories-heading {
   padding: 2rem 0; }
 
+
 .login-container-facebook {
   font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   color: #ffffff; }
+
+
 
 .center {
   margin: 0 auto; }
@@ -518,6 +521,7 @@ a {
     width: 350px;
     height: 2em;
     margin: 10px; }
+
     .login-container input :invalid {
       background-color: #ec5252; }
   .login-container-thirdparty {
@@ -565,7 +569,9 @@ a {
     position: relative;
     margin-bottom: 3rem;
     margin-right: 12rem; }
+
   .login-container-button {
     padding: 1em; }
   .login-container a {
     color: white; }
+
