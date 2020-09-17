@@ -1,47 +1,76 @@
 .btn {
-    font-weight: bold;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    &:focus {
-        outline: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    color: $white-background;
+    background-color: $primary-btn-color;
+    border: 2px solid $primary-btn-color;
+
+    &:hover {
+      background-color: $primary-btn-hover-color;
+      border: 2px solid black;
     }
+  }
 
-    &-primary {
-        color: $white-background;
-        background-color: $primary-btn-color;
-        border: 2px solid $primary-btn-color;
+  &-secondary {
+    color: $btn-border-blue-light;
+    background-color: $white-background;
+    border: 2px solid $btn-border-blue-light;
 
-        &:hover {
-            background-color: $primary-btn-hover-color;
-            border: 2px solid black;
-        }
+    &:hover {
+      color: black;
+      border: 2px solid black;
     }
+  }
 
-    &-secondary {
-        color: $btn-border-blue-light;
-        background-color: $white-background;
-        border: 2px solid $btn-border-blue-light;
+  &-md {
+    height: 4rem;
+    width: 10rem;
+  }
 
-        &:hover {
-            color: black;
-            border: 2px solid black;
-        }
+  &-loginpage {
+    width: 350px;
+    height: 3em;
+    margin: 10px;
+    background-color: $btn-login-background;
+    color: $white-background;
+
+    &:hover {
+      color: black;
+      border: 2px solid black;
     }
+  }
+  
+  &-facebook-login{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 3rem;
+    background-color: $btn-facebook-background;
 
-    &-md {
-        height: 4rem;
-        width: 10rem;
+    &:hover{
+        border: 2px solid black;
+        background-color: rgb(26, 83, 130);
     }
+  }
 
-    &-loginpage{
-        height : 45px;
-        width : 100px;
-        background-color:$btn-login-background;
-        color: $white-background;
+  &-google-login{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+     width: 350px;
+     height: 3rem;
+     margin: 1rem;
+     background-color: $white-background;
 
-        &:hover {
-            color: black;
-            border: 2px solid black;
-        }
-    }
+     &:hover{
+         border: black solid 2px;
+         background-color: rgb(235, 235, 235);
+     }
+  }
 }
