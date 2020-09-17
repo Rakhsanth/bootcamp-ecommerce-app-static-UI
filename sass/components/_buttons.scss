@@ -1,5 +1,4 @@
 .btn {
-<<<<<<< HEAD
   font-weight: bold;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -15,7 +14,6 @@
     &:hover {
       background-color: $primary-btn-hover-color;
       border: 2px solid black;
-=======
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +23,6 @@
     cursor: pointer;
     &:focus {
         outline: none;
->>>>>>> 28217229beaf9b4ff054478e98a90b271d5d0915
     }
   }
 
@@ -65,11 +62,9 @@
     height: 3rem;
     background-color: $btn-facebook-background;
 
-<<<<<<< HEAD
     &:hover{
         border: 2px solid black;
         background-color: rgb(26, 83, 130);
-=======
     &-tertiary {
         color: $white-background;
         background-color: $rating-text-color;
@@ -85,11 +80,9 @@
     &-md {
         height: 4rem;
         width: 10rem;
->>>>>>> 28217229beaf9b4ff054478e98a90b271d5d0915
     }
   }
 
-<<<<<<< HEAD
   &-google-login{
     display: flex;
     justify-content: space-evenly;
@@ -98,7 +91,6 @@
      height: 3rem;
      margin: 1rem;
      background-color: $white-background;
-=======
     &-lg {
         height: 5rem;
         width: 25rem;
@@ -110,11 +102,10 @@
         width: 100px;
         background-color: $btn-login-background;
         color: $white-background;
->>>>>>> 28217229beaf9b4ff054478e98a90b271d5d0915
 
      &:hover{
          border: black solid 2px;
          background-color: rgb(235, 235, 235);
      }
   }
-}
+  }
