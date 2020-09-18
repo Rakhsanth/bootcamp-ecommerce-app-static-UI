@@ -1,0 +1,26 @@
+.search-title {
+    grid-row: 1 / 2;
+    grid-column: col-start 1 / -1;
+    width: 55%;
+}
+
+.filter-sort {
+    grid-row: 2 / 3;
+    grid-column: col-start 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+
+    &-btn {
+        margin-right: 2rem;
+        &-icon {
+            margin-right: 1rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.filter-result-count {
+    margin-left: auto;
+    margin-right: 3rem;
+}

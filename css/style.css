@@ -22,6 +22,10 @@ a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #6886bf; }
 
+.h2-heading {
+  font-size: 3rem;
+  font-weight: bold; }
+
 .h3-heading {
   font-size: 2rem;
   font-weight: bold; }
@@ -30,7 +34,7 @@ a {
   padding: 2rem 0; }
 
 .login-container-facebook {
-  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   color: #ffffff; }
 
 .center {
@@ -50,6 +54,7 @@ a {
     outline: none; }
   .btn-primary {
     color: white;
+    fill: white;
     background-color: #0f7c90;
     border: 2px solid #0f7c90; }
     .btn-primary:hover {
@@ -61,10 +66,12 @@ a {
         outline: none; }
   .btn-secondary {
     color: #2896a9;
+    fill: #2896a9;
     background-color: white;
     border: 2px solid #2896a9; }
     .btn-secondary:hover {
       color: black;
+      fill: black;
       border: 2px solid black; }
   .btn-tertiary {
     color: white;
@@ -118,6 +125,19 @@ a {
     .btn-loginpage:hover {
       border: black solid 2px;
       background-color: #992337; }
+
+.filter-sort-sort {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 5px; }
+
+.ui.selection.dropdown {
+  padding: 1.2rem 2.1rem; }
+
+.ui.selection.dropdown > .delete.icon,
+.ui.selection.dropdown > .dropdown.icon,
+.ui.selection.dropdown > .search.icon {
+  top: 1rem; }
 
 .top-header {
   display: flex;
@@ -222,6 +242,10 @@ a {
     position: absolute;
     height: 0.1px;
     width: 0.1px;
+    border-left: #dcdacb;
+    border-right: #dcdacb;
+    border-bottom: #dcdacb;
+    box-shadow: 0 0.3rem 0.3rem #dcdacb;
     background-color: white;
     overflow: hidden;
     opacity: 0;
@@ -397,7 +421,16 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 5rem; }
 
-.main-conatiner {
+.main-conatiner-courses {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  display: grid;
+  grid-template-rows: 15rem 10rem minmax(250rem, min-content) 10rem 25vh;
+  grid-template-columns: repeat(10, [col-start] minmax(min-content, 15rem) [col-end]);
+  row-gap: 1rem;
+  column-gap: 1rem; }
+
+.main-conatiner-home {
   margin-top: 10rem;
   display: grid;
   grid-template-rows: 65vh 5rem minmax(40vh, min-content) 5rem minmax(40vh, min-content) repeat(3, min-content) 25vh;
@@ -462,6 +495,7 @@ a {
     outline: none; }
   .btn-primary {
     color: white;
+    fill: white;
     background-color: #0f7c90;
     border: 2px solid #0f7c90; }
     .btn-primary:hover {
@@ -473,10 +507,12 @@ a {
         outline: none; }
   .btn-secondary {
     color: #2896a9;
+    fill: #2896a9;
     background-color: white;
     border: 2px solid #2896a9; }
     .btn-secondary:hover {
       color: black;
+      fill: black;
       border: 2px solid black; }
   .btn-tertiary {
     color: white;
@@ -591,3 +627,24 @@ a {
     position: relative;
     margin-bottom: 3rem;
     margin-right: 12rem; }
+
+.search-title {
+  grid-row: 1 / 2;
+  grid-column: col-start 1 / -1;
+  width: 55%; }
+
+.filter-sort {
+  grid-row: 2 / 3;
+  grid-column: col-start 1 / -1;
+  display: flex;
+  justify-content: flex-start; }
+  .filter-sort-btn {
+    margin-right: 2rem; }
+    .filter-sort-btn-icon {
+      margin-right: 1rem;
+      width: 2rem;
+      height: 2rem; }
+
+.filter-result-count {
+  margin-left: auto;
+  margin-right: 3rem; }

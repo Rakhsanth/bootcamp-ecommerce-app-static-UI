@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="top-header">
+            <div class="top-header-logo"></div>
+            <nav class="top-header-navbar">
+                <span class="top-header-navbar-title">Categories</span>
+                <div class="top-header-navbar-dropdown">
+                    <ul class="top-header-navbar-dropdown-list">
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-header-search">
+                <div class="top-header-search-bar">
+                    <input
+                        type="text"
+                        class="top-header-search-bar-input"
+                        placeholder="Search Courses or Bootcamps"
+                    />
+                </div>
+                <div class="top-header-search-icons">
+                    <svg class="top-header-search-icons-icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-header-cart">
+                <svg class="top-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="top-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+            <button class="btn btn-secondary btn-md">Log in</button>
+            <button class="btn btn-primary btn-md">Sign up</button>
+        </header>
+        <main class="main-conatiner-courses">
+            <div class="search-title">
+                <h2 class="h2-heading">
+                    10,000 results for “unreal game programming”
+                </h2>
+            </div>
+            <div class="filter-sort">
+                <button
+                    class="btn btn-secondary btn-center btn-md filter-sort-btn"
+                >
+                    <svg class="filter-sort-btn-icon">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                    </svg>
+                    <span class="filter-sort-btn-text">Filter</span>
+                </button>
+                <select
+                    name="sortCourses"
+                    id="sortCourses"
+                    class="ui dropdown filter-sort-sort"
+                >
+                    <option value="highestRated">Highest Rated</option>
+                    <option value="Newest">Newest</option>
+                </select>
+                <span class="filter-result-count">10,000 results</span>
+            </div>
+        </main>
+        <script>
+            window.onload = function () {
+                $('.ui.dropdown').dropdown();
+            };
+        </script>
+    </body>
+</html>

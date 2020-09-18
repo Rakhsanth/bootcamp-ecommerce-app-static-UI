@@ -1,12 +1,8 @@
-.main-conatiner-home {
+.main-conatiner-courses {
     margin-top: 10rem;
+    margin-left: 3rem;
     display: grid;
-    grid-template-rows:
-        65vh 5rem minmax(40vh, min-content) 5rem minmax(40vh, min-content) repeat(
-            3,
-            min-content
-        )
-        25vh;
+    grid-template-rows: 15rem 10rem minmax(250rem, min-content) 10rem 25vh;
     grid-template-columns: repeat(
         10,
         [col-start] minmax(min-content, 15rem) [col-end]

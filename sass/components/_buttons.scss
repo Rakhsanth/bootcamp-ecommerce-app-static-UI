@@ -10,6 +10,7 @@
 
     &-primary {
         color: $white-background;
+        fill: $white-background;
         background-color: $primary-btn-color;
         border: 2px solid $primary-btn-color;
 
@@ -27,11 +28,13 @@
 
     &-secondary {
         color: $btn-border-blue-light;
+        fill: $btn-border-blue-light;
         background-color: $white-background;
         border: 2px solid $btn-border-blue-light;
 
         &:hover {
             color: black;
+            fill: black;
             border: 2px solid black;
         }
     }

@@ -1,9 +1,12 @@
-
-.login-container input placeholder{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    color: rgb(104,134,191);
+.login-container input placeholder {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(104, 134, 191);
 }
 
+.h2-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
 .h3-heading {
     font-size: 2rem;
@@ -14,8 +17,9 @@
     padding: 2rem 0;
 }
 
-.login-container-facebook{
-    font-family:  sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+.login-container-facebook {
+    font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
+        segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
     color: #ffffff;
 }
-
