@@ -130,11 +130,101 @@
                 </select>
                 <span class="filter-result-count">10,000 results</span>
             </div>
+            <div class="filter-criteria">
+                <div
+                    class="filter-criteria-top"
+                    onclick="dropDownToggle(event)"
+                >
+                    <h5 class="filter-criteria-top-title">Level</h5>
+                    <svg class="filter-criteria-top-icon">
+                        <use xlink:href="img/sprite.svg#icon-circle-down"></use>
+                    </svg>
+                </div>
+                <div class="filter-dropdown dropdown-close">
+                    <div class="input-group">
+                        <input
+                            type="checkbox"
+                            name="level"
+                            id="level-beginner"
+                            value="beginner"
+                            class="filter-criteria-checkbox"
+                        />
+                        <label
+                            for="level-beginner"
+                            class="input-group-label-checkbox"
+                        >
+                            <svg class="input-group-label-checkbox-check">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-check"
+                                ></use>
+                            </svg>
+                            <span>Beginner</span></label
+                        >
+                    </div>
+                    <div class="input-group">
+                        <input
+                            type="checkbox"
+                            name="level"
+                            id="level-intermediate"
+                            value="intermediate"
+                            class="filter-criteria-checkbox"
+                        />
+                        <label
+                            for="level-intermediate"
+                            class="input-group-label-checkbox"
+                        >
+                            <svg class="input-group-label-checkbox-check">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-check"
+                                ></use>
+                            </svg>
+                            <span>Intermediate</span></label
+                        >
+                    </div>
+                    <div class="input-group">
+                        <input
+                            type="checkbox"
+                            name="level"
+                            id="level-advanced"
+                            value="advanced"
+                            class="filter-criteria-checkbox"
+                        />
+                        <label
+                            for="level-advanced"
+                            class="input-group-label-checkbox"
+                        >
+                            <svg class="input-group-label-checkbox-check">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-check"
+                                ></use>
+                            </svg>
+                            <span>Advanced</span></label
+                        >
+                    </div>
+                </div>
+            </div>
         </main>
         <script>
             window.onload = function () {
                 $('.ui.dropdown').dropdown();
             };
+
+            function dropDownToggle(event) {
+                console.log(event);
+                const dropdownIcon = event.target.children[1];
+                const dropdownElement = event.target.nextElementSibling;
+                if (dropdownElement.classList.contains('dropdown-close')) {
+                    dropdownElement.classList.remove('dropdown-close');
+                    dropdownElement.classList.add('dropdown-open');
+                    dropdownIcon.style.transform = 'rotate(180deg)';
+                } else if (
+                    dropdownElement.classList.contains('dropdown-open')
+                ) {
+                    dropdownElement.classList.remove('dropdown-open');
+                    dropdownElement.classList.add('dropdown-close');
+                    dropdownIcon.style.transform = 'none';
+                }
+            }
         </script>
     </body>
 </html>

@@ -11,3 +11,18 @@
 .ui.selection.dropdown > .search.icon {
     top: 1rem;
 }
+
+.dropdown-close {
+    height: 0;
+    overflow: hidden;
+}
+.dropdown-open {
+    height: 10rem;
+    overflow: hidden;
+}
+
+.filter-dropdown {
+    width: 75%;
+    border-bottom: 1px solid $line-seperator-color;
+    transition: height 0.5s ease-in-out;
+}

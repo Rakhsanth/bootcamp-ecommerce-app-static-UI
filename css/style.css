@@ -139,6 +139,19 @@ a {
 .ui.selection.dropdown > .search.icon {
   top: 1rem; }
 
+.dropdown-close {
+  height: 0;
+  overflow: hidden; }
+
+.dropdown-open {
+  height: 10rem;
+  overflow: hidden; }
+
+.filter-dropdown {
+  width: 75%;
+  border-bottom: 1px solid #dcdacb;
+  transition: height 0.5s ease-in-out; }
+
 .top-header {
   display: flex;
   justify-content: space-evenly;
@@ -648,3 +661,63 @@ a {
 .filter-result-count {
   margin-left: auto;
   margin-right: 3rem; }
+
+.filter-criteria {
+  grid-column: col-start 1 / col-end 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .filter-criteria-top {
+    position: relative;
+    width: 75%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dcdacb;
+    cursor: pointer; }
+    .filter-criteria-top-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .filter-criteria-top-icon {
+      margin-left: auto;
+      margin-right: 1rem;
+      width: 1rem;
+      height: 1rem;
+      transition: transform 0.5s ease-in-out; }
+
+.filter-criteria-checkbox {
+  visibility: hidden; }
+  .filter-criteria-checkbox:checked + .input-group-label-checkbox::before {
+    background-color: #094c59; }
+
+.input-group {
+  margin-top: 1rem; }
+
+.input-group-label-checkbox {
+  margin-left: 3rem;
+  position: relative;
+  cursor: pointer; }
+  .input-group-label-checkbox::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #dcdacb;
+    cursor: pointer; }
+  .input-group-label-checkbox-check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3rem;
+    margin-left: 0.2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    fill: white; }
