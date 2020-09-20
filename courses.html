@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="top-header">
+            <div class="top-header-logo"></div>
+            <nav class="top-header-navbar">
+                <span class="top-header-navbar-title">Categories</span>
+                <div class="top-header-navbar-dropdown">
+                    <ul class="top-header-navbar-dropdown-list">
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-header-search">
+                <div class="top-header-search-bar">
+                    <input
+                        type="text"
+                        class="top-header-search-bar-input"
+                        placeholder="Search Courses or Bootcamps"
+                    />
+                </div>
+                <div class="top-header-search-icons">
+                    <svg class="top-header-search-icons-icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-header-cart">
+                <svg class="top-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="top-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+            <button class="btn btn-secondary btn-md">Log in</button>
+            <button class="btn btn-primary btn-md">Sign up</button>
+        </header>
+        <main class="main-conatiner-courses">
+            <div class="search-title">
+                <h2 class="h2-heading">
+                    10,000 results for “unreal game programming”
+                </h2>
+            </div>
+            <div class="filter-sort">
+                <button
+                    class="btn btn-secondary btn-center btn-md filter-sort-btn"
+                >
+                    <svg class="filter-sort-btn-icon">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                    </svg>
+                    <span class="filter-sort-btn-text">Filter</span>
+                </button>
+                <select
+                    name="sortCourses"
+                    id="sortCourses"
+                    class="ui dropdown filter-sort-sort"
+                >
+                    <option value="highestRated">Highest Rated</option>
+                    <option value="Newest">Newest</option>
+                </select>
+                <span class="filter-result-count">10,000 results</span>
+            </div>
+
+            <div class="filter-criteria-container">
+                <div class="filter-criteria">
+                    <div
+                        class="filter-criteria-top"
+                        onclick="dropDownToggle(event)"
+                    >
+                        <h5 class="filter-criteria-top-title">Level</h5>
+                        <svg class="filter-criteria-top-icon">
+                            <use
+                                xlink:href="img/sprite.svg#icon-circle-down"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown dropdown-close">
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="level-beginner"
+                                value="beginner"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="level-beginner"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>Beginner</span></label
+                            >
+                        </div>
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="level-intermediate"
+                                value="intermediate"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="level-intermediate"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>Intermediate</span></label
+                            >
+                        </div>
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="level-advanced"
+                                value="advanced"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="level-advanced"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>Advanced</span></label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-criteria">
+                    <div
+                        class="filter-criteria-top"
+                        onclick="dropDownToggle(event)"
+                    >
+                        <h5 class="filter-criteria-top-title">Length</h5>
+                        <svg class="filter-criteria-top-icon">
+                            <use
+                                xlink:href="img/sprite.svg#icon-circle-down"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown dropdown-close">
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="length-1-3"
+                                value="lte 3"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="length-1-3"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>1 - 3 months</span></label
+                            >
+                        </div>
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="length-3-6"
+                                value="gt 3 and lte 6"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="length-3-6"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>3 to 6 months</span></label
+                            >
+                        </div>
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="length-6+"
+                                value="gt 6"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="length-6+"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>6 months +</span></label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-criteria">
+                    <div
+                        class="filter-criteria-top"
+                        onclick="dropDownToggle(event)"
+                    >
+                        <h5 class="filter-criteria-top-title">Housing</h5>
+                        <svg class="filter-criteria-top-icon">
+                            <use
+                                xlink:href="img/sprite.svg#icon-circle-down"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown dropdown-close">
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="housing-available"
+                                value="available"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="housing-available"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>Available</span></label
+                            >
+                        </div>
+                        <div class="input-group">
+                            <input
+                                type="checkbox"
+                                name="level"
+                                id="housing-unavailable"
+                                value="unavailable"
+                                class="filter-criteria-checkbox"
+                            />
+                            <label
+                                for="housing-unavailable"
+                                class="input-group-label-checkbox"
+                            >
+                                <svg class="input-group-label-checkbox-check">
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span>Unavailable</span></label
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-results-container">
+                <div class="filter-result-card">
+                    <img
+                        src="./img/courseImages/courseCardImg.jpg"
+                        alt="dev-course-img"
+                        class="filter-result-card-img"
+                    />
+                    <div class="filter-result-card-details">
+                        <h5 class="filter-result-card-details-title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </h5>
+                        <p class="filter-result-card-details-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Est consequuntur maiores nam, neque alias
+                            quas?
+                        </p>
+                        <span class="filter-result-card-details-author"
+                            >Author : Somebody authored</span
+                        >
+                        <div class="filter-result-card-details-rating">
+                            <span class="filter-result-card-details-rating-text"
+                                >4.5</span
+                            >
+                            <div
+                                class="filter-result-card-details-rating-stars"
+                            >
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-half"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span
+                                class="filter-result-card-details-rating-count"
+                                >(23212)</span
+                            >
+                        </div>
+                    </div>
+                    <span class="filter-result-card-price">&#8377; 15000</span>
+
+                    <div class="filter-result-card-popup">
+                        <span class="filter-result-card-popup-cap"></span>
+                        <span class="filter-result-card-popup-cap-hider"></span>
+                        <h4 class="filter-result-card-popup-title">
+                            What you will learn
+                        </h4>
+                        <ul class="filter-result-card-popup-list">
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-pagination">
+                <button class="btn btn-secondary btn-circle btn-circle-sm">
+                    <svg class="btn-icon">
+                        <use
+                            xlink:href="img/sprite.svg#icon-chevron-left"
+                        ></use>
+                    </svg>
+                </button>
+                <!-- <ul class="courses-pagination-pagenos">
+                    <li class="courses-pagination-pageno">
+                        <a href="#" class="courses-pagination-pagenum">1</a>
+                    </li>
+                    <li class="courses-pagination-pageno">
+                        <a href="#" class="courses-pagination-pagenum">2</a>
+                    </li>
+                </ul> -->
+                <a href="#" class="courses-pagination-pagenum">1</a>
+                <a href="#" class="courses-pagination-pagenum">2</a>
+                <a href="#" class="courses-pagination-pagenum">3</a>
+                <a href="#" class="courses-pagination-pagenum">4</a>
+                <a href="#" class="courses-pagination-pagenum">5</a>
+                <a href="#" class="courses-pagination-pagenum">6</a>
+                <a href="#" class="courses-pagination-pagenum">7</a>
+                <a href="#" class="courses-pagination-pagenum">8</a>
+                <a href="#" class="courses-pagination-pagenum">9</a>
+                <a href="#" class="courses-pagination-pagenum">10</a>
+                <button class="btn btn-secondary btn-circle btn-circle-sm">
+                    <svg class="btn-icon">
+                        <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                        ></use>
+                    </svg>
+                </button>
+                <span class="courses-pagination-text">Total pages : 25</span>
+            </div>
+        </main>
+        <script>
+            window.onload = function () {
+                $('.ui.dropdown').dropdown();
+            };
+
+            function dropDownToggle(event) {
+                console.log(event);
+                const dropdownIcon = event.target.children[1];
+                const dropdownElement = event.target.nextElementSibling;
+                if (dropdownElement.classList.contains('dropdown-close')) {
+                    dropdownElement.classList.remove('dropdown-close');
+                    dropdownElement.classList.add('dropdown-open');
+                    dropdownIcon.style.transform = 'rotate(180deg)';
+                } else if (
+                    dropdownElement.classList.contains('dropdown-open')
+                ) {
+                    dropdownElement.classList.remove('dropdown-open');
+                    dropdownElement.classList.add('dropdown-close');
+                    dropdownIcon.style.transform = 'none';
+                }
+            }
+
+            const filterResultContainer = document.querySelector(
+                '.filter-results-container'
+            );
+
+            for (let count = 1; count <= 9; count++) {
+                let cardDiv = document.createElement('div');
+                cardDiv.className = 'filter-result-card';
+                cardDiv.innerHTML = `
+                <img
+                        src="./img/courseImages/courseCardImg.jpg"
+                        alt="dev-course-img"
+                        class="filter-result-card-img"
+                    />
+                    <div class="filter-result-card-details">
+                        <h5 class="filter-result-card-details-title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </h5>
+                        <p class="filter-result-card-details-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Est consequuntur maiores nam, neque alias
+                            quas?
+                        </p>
+                        <span class="filter-result-card-details-author"
+                            >Author : Somebody authored</span
+                        >
+                        <div class="filter-result-card-details-rating">
+                            <span class="filter-result-card-details-rating-text"
+                                >4.5</span
+                            >
+                            <div
+                                class="filter-result-card-details-rating-stars"
+                            >
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="filter-result-card-details-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-half"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span
+                                class="filter-result-card-details-rating-count"
+                                >(23212)</span
+                            >
+                        </div>
+                    </div>
+                    <span class="filter-result-card-price">&#8377; 15000</span>
+                    <div class="filter-result-card-popup">
+                        <span class="filter-result-card-popup-cap"></span>
+                        <span class="filter-result-card-popup-cap-hider"></span>
+                        <h4 class="filter-result-card-popup-title">
+                            What you will learn
+                        </h4>
+                        <ul class="filter-result-card-popup-list">
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                            <li class="filter-result-card-popup-list-item">
+                                <svg
+                                    class="filter-result-card-popup-list-item-icon"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-check"
+                                    ></use>
+                                </svg>
+                                <span
+                                    class="filter-result-card-popup-list-item-text"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam eligendi dolorum
+                                    beatae quibusdam commodi cupiditate.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                `;
+                filterResultContainer.appendChild(cardDiv);
+            }
+        </script>
+    </body>
+</html>

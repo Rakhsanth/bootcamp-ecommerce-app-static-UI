@@ -8,12 +8,15 @@
 @import 'base/utils';
 
 @import 'components/buttons';
+@import 'components/dropdowns';
 @import 'components/headers';
 @import 'components/navbars';
 @import 'components/cards';
 @import 'components/containers';
 
+@import 'layouts/courses';
 @import 'layouts/home';
 
 @import 'pages/home';
 @import 'pages/login';
+@import 'pages/courses';

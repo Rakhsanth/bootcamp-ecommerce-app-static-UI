@@ -17,6 +17,10 @@
         position: absolute;
         height: 0.1px;
         width: 0.1px;
+        border-left: $line-seperator-color;
+        border-right: $line-seperator-color;
+        border-bottom: $line-seperator-color;
+        box-shadow: 0 0.3rem 0.3rem $line-seperator-color;
         background-color: $white-background;
         overflow: hidden;
         opacity: 0;
