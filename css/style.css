@@ -1026,7 +1026,8 @@ a {
         margin: 0.5rem 0;
         display: flex;
         justify-content: flex-start;
-        align-items: center; }
+        align-items: center;
+        cursor: pointer; }
       .course-feedback-top-percents .course-feedback-top-percents5 > .course-feedback-top-percents5-bar,
       .course-feedback-top-percents .course-feedback-top-percents4 > .course-feedback-top-percents4-bar,
       .course-feedback-top-percents .course-feedback-top-percents3 > .course-feedback-top-percents3-bar,
