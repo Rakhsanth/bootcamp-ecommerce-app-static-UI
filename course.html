@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="top-header">
+            <div class="top-header-logo"></div>
+            <nav class="top-header-navbar">
+                <span class="top-header-navbar-title">Categories</span>
+                <div class="top-header-navbar-dropdown">
+                    <ul class="top-header-navbar-dropdown-list">
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-header-search">
+                <div class="top-header-search-bar">
+                    <input
+                        type="text"
+                        class="top-header-search-bar-input"
+                        placeholder="Search Courses or Bootcamps"
+                    />
+                </div>
+                <div class="top-header-search-icons">
+                    <svg class="top-header-search-icons-icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-header-cart">
+                <svg class="top-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="top-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+            <button class="btn btn-secondary btn-md">Log in</button>
+            <button class="btn btn-primary btn-md">Sign up</button>
+        </header>
+        <main class="main-conatiner-course">
+            <img
+                src="./img/hero-image.jpg"
+                alt="course-image"
+                class="course-image"
+            />
+            <div class="course-maindesc">
+                <h2 class="course-maindesc-title">What you will learn</h2>
+                <ul class="course-maindesc-list">
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                    <li class="course-maindesc-list-item">
+                        <svg class="course-maindesc-list-item-icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                        </svg>
+                        <h5 class="course-maindesc-list-item-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consectetur, vel.
+                        </h5>
+                    </li>
+                </ul>
+                <span class="course-maindesc-fade1"></span>
+                <span class="course-maindesc-fade2"></span>
+            </div>
+            <div class="course-req-desc">
+                <div class="course-req-desc-req">
+                    <h2 class="course-req-desc-req-heading">Requirements</h2>
+                    <li class="course-req-desc-req-list-item">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Earum, tenetur.
+                    </li>
+                    <li class="course-req-desc-req-list-item">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Earum, tenetur.
+                    </li>
+                </div>
+                <div class="course-req-desc-desc">
+                    <h2 class="course-req-desc-desc-heading">Description</h2>
+                    <p class="course-req-desc-desctext">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Voluptatum adipisci quos nemo ipsum, maxime atque
+                        nobis dolorum impedit neque. Dolorem, illo, odit quasi
+                        sint quisquam ratione quidem non iusto, doloremque iste
+                        quia a unde nulla! Corrupti quisquam molestias saepe
+                        expedita deserunt ullam, eos possimus consectetur
+                        accusamus explicabo esse cum fugit placeat eveniet
+                        dolorum dicta aut ipsam? Voluptas, quas! Voluptatibus,
+                        soluta esse. Asperiores odit at, odio dolorem doloremque
+                        porro explicabo maxime corrupti, voluptas laudantium
+                        deserunt culpa tempora, ad optio praesentium eum! Id ab
+                        praesentium maxime nam voluptate dolor dicta fugiat
+                        magni error. Ipsum veniam iste aut, architecto molestiae
+                        voluptatibus alias illo!
+                    </p>
+                </div>
+            </div>
+            <div class="course-feedback">
+                <h2 class="course-feedback-heading">User Feedback</h2>
+                <div class="course-feedback-top">
+                    <div class="course-feedback-top-rating">
+                        <h3 class="course-feedback-top-rating-text">4.7</h3>
+                        <div class="course-feedback-top-rating-stars">
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-half"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-feedback-top-percents">
+                        <div class="course-feedback-top-percents5">
+                            <div class="course-feedback-top-percents5-bar">
+                                <span
+                                    class="course-feedback-top-percents5-bar-empty"
+                                ></span>
+                                <span
+                                    class="course-feedback-top-percents5-bar-fill"
+                                ></span>
+                            </div>
+                            <div class="course-feedback-top-rating-stars">
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span class="course-feedback-top-percents-text"
+                                >60%</span
+                            >
+                        </div>
+                        <div class="course-feedback-top-percents4">
+                            <div class="course-feedback-top-percents4-bar">
+                                <span
+                                    class="course-feedback-top-percents4-bar-empty"
+                                ></span>
+                                <span
+                                    class="course-feedback-top-percents4-bar-fill"
+                                ></span>
+                            </div>
+                            <div class="course-feedback-top-rating-stars">
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span class="course-feedback-top-percents-text"
+                                >20%</span
+                            >
+                        </div>
+                        <div class="course-feedback-top-percents3">
+                            <div class="course-feedback-top-percents3-bar">
+                                <span
+                                    class="course-feedback-top-percents3-bar-empty"
+                                ></span>
+                                <span
+                                    class="course-feedback-top-percents3-bar-fill"
+                                ></span>
+                            </div>
+                            <div class="course-feedback-top-rating-stars">
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span class="course-feedback-top-percents-text"
+                                >10%</span
+                            >
+                        </div>
+                        <div class="course-feedback-top-percents2">
+                            <div class="course-feedback-top-percents2-bar">
+                                <span
+                                    class="course-feedback-top-percents2-bar-empty"
+                                ></span>
+                                <span
+                                    class="course-feedback-top-percents2-bar-fill"
+                                ></span>
+                            </div>
+                            <div class="course-feedback-top-rating-stars">
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span class="course-feedback-top-percents-text"
+                                >5%</span
+                            >
+                        </div>
+                        <div class="course-feedback-top-percents1">
+                            <div class="course-feedback-top-percents1-bar">
+                                <span
+                                    class="course-feedback-top-percents1-bar-empty"
+                                ></span>
+                                <span
+                                    class="course-feedback-top-percents1-bar-fill"
+                                ></span>
+                            </div>
+                            <div class="course-feedback-top-rating-stars">
+                                <svg
+                                    class="course-feedback-top-rating-stars-star"
+                                >
+                                    <use
+                                        xlink:href="img/sprite.svg#icon-star-full"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <span class="course-feedback-top-percents-text"
+                                >5%</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="course-feedback-main">
+                    <h2 class="course-feedback-main-heading">Reviews</h2>
+                    <div class="course-feedback-main-review">
+                        <h5 class="course-feedback-main-review-author">
+                            Somebody's Name
+                        </h5>
+                        <div class="course-feedback-top-rating-stars">
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="course-feedback-top-rating-stars-star">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-half"
+                                ></use>
+                            </svg>
+                        </div>
+                        <p class="course-feedback-main-review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus adipisci, pariatur nihil iste
+                            praesentium aut vitae enim repellendus quaerat
+                            dolore doloribus, repellat consequuntur accusantium
+                            numquam? Laborum pariatur quasi repellat architecto
+                            est quae eos nihil itaque natus earum cumque vel
+                            vitae voluptatum quo ex quia optio deserunt
+                            veritatis, corporis fugit sed, iusto ratione. Natus
+                            aliquid exercitationem sapiente aliquam
+                            necessitatibus, pariatur eligendi possimus
+                            voluptatibus, perspiciatis aperiam quaerat
+                            recusandae quidem suscipit facilis beatae! Rem
+                            aliquam eveniet molestiae veniam omnis facilis, iste
+                            officiis quis facere quo doloribus debitis esse odio
+                            tempora optio quia iure expedita quam! Officiis,
+                            possimus magnam. Eum ab sint eveniet magni!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-payment">
+                <h4 class="course-payment-price">&#8377; 12000</h4>
+                <button class="btn btn-tertiary btn-md">Add to cart</button>
+                <button class="btn btn-secondary btn-md">Buy now</button>
+            </div>
+        </main>
+        <script></script>
+    </body>
+</html>
