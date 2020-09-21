@@ -516,6 +516,64 @@
                 <button class="btn btn-secondary btn-md">Buy now</button>
             </div>
         </main>
-        <script></script>
+        <script>
+            const reviewDiv = document.querySelector('.course-feedback-main');
+
+            for (let i = 1; i <= 10; i++) {
+                let mainReviewDiv = document.createElement('div');
+                mainReviewDiv.className = 'course-feedback-main-review';
+                mainReviewDiv.innerHTML = `
+                    <h5 class="course-feedback-main-review-author">
+                        Somebody's Name
+                    </h5>
+                    <div class="course-feedback-top-rating-stars">
+                        <svg class="course-feedback-top-rating-stars-star">
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-full"
+                            ></use>
+                        </svg>
+                        <svg class="course-feedback-top-rating-stars-star">
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-full"
+                            ></use>
+                        </svg>
+                        <svg class="course-feedback-top-rating-stars-star">
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-full"
+                            ></use>
+                        </svg>
+                        <svg class="course-feedback-top-rating-stars-star">
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-full"
+                            ></use>
+                        </svg>
+                        <svg class="course-feedback-top-rating-stars-star">
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-half"
+                            ></use>
+                        </svg>
+                    </div>
+                    <p class="course-feedback-main-review-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatibus adipisci, pariatur nihil iste
+                        praesentium aut vitae enim repellendus quaerat
+                        dolore doloribus, repellat consequuntur accusantium
+                        numquam? Laborum pariatur quasi repellat architecto
+                        est quae eos nihil itaque natus earum cumque vel
+                        vitae voluptatum quo ex quia optio deserunt
+                        veritatis, corporis fugit sed, iusto ratione. Natus
+                        aliquid exercitationem sapiente aliquam
+                        necessitatibus, pariatur eligendi possimus
+                        voluptatibus, perspiciatis aperiam quaerat
+                        recusandae quidem suscipit facilis beatae! Rem
+                        aliquam eveniet molestiae veniam omnis facilis, iste
+                        officiis quis facere quo doloribus debitis esse odio
+                        tempora optio quia iure expedita quam! Officiis,
+                        possimus magnam. Eum ab sint eveniet magni!
+                    </p>
+                `;
+                reviewDiv.appendChild(mainReviewDiv);
+            }
+        </script>
     </body>
 </html>

@@ -1081,3 +1081,9 @@ a {
       width: 5%; }
     .course-feedback-top .course-feedback-top-percents1-bar-empty::after {
       width: 5%; }
+  .course-feedback-main {
+    padding-top: 2rem; }
+    .course-feedback-main-review {
+      margin: 1rem 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid #dcdacb; }
