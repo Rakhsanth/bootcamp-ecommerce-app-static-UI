@@ -111,6 +111,16 @@
                 alt="course-image"
                 class="course-image"
             />
+            <span class="image-overlay course-image-overlay"></span>
+            <div class="course-top-details">
+                <h2 class="course-top-details-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat, quos.
+                </h2>
+                <h5 class="course-top-details-bootcamp">
+                    Lorem ipsum dolor sit amet.
+                </h5>
+            </div>
             <div class="course-maindesc">
                 <h2 class="course-maindesc-title">What you will learn</h2>
                 <ul class="course-maindesc-list">
@@ -238,6 +248,65 @@
                         magni error. Ipsum veniam iste aut, architecto molestiae
                         voluptatibus alias illo!
                     </p>
+                </div>
+            </div>
+            <div class="container-scrolly">
+                <h2 class="container-scrolly-heading">
+                    Courses from same Bootcamp
+                </h2>
+                <div class="container-scrolly-main">
+                    <div class="container-scrolly-main-item">
+                        <img
+                            src="./img/courseImages/courseCardImg.jpg"
+                            alt="course"
+                            class="container-scrolly-main-item-img"
+                        />
+                        <div class="container-scrolly-main-item-titledesc">
+                            <h4
+                                class="container-scrolly-main-item-titledesc-title"
+                            >
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quae, perferendis.
+                            </h4>
+                            <p
+                                class="container-scrolly-main-item-titledesc-desc"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Quisquam, ipsum laboriosam in
+                                quo ipsa non recusandae autem culpa dicta
+                                libero!
+                            </p>
+                        </div>
+
+                        <div class="container-scrolly-main-item-rating">
+                            <h5 class="container-scrolly-main-item-rating-text">
+                                4.7
+                            </h5>
+                            <svg
+                                class="container-scrolly-main-item-rating-icon"
+                            >
+                                <use
+                                    xlink:href="img/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="container-scrolly-main-item-ratecount">
+                            <svg
+                                class="container-scrolly-main-item-rating-icon"
+                            >
+                                <use
+                                    xlink:href="img/sprite.svg#icon-users"
+                                ></use>
+                            </svg>
+                            <span
+                                class="container-scrolly-main-item-ratecount-text"
+                                >11000</span
+                            >
+                        </div>
+                        <span class="container-scrolly-main-item-price"
+                            >&#8377; 12000</span
+                        >
+                    </div>
                 </div>
             </div>
             <div class="course-feedback">
@@ -509,6 +578,9 @@
                         </p>
                     </div>
                 </div>
+                <button class="btn btn-secondary course-review-btn">
+                    See more
+                </button>
             </div>
             <div class="course-payment">
                 <h4 class="course-payment-price">&#8377; 12000</h4>
@@ -517,8 +589,70 @@
             </div>
         </main>
         <script>
-            const reviewDiv = document.querySelector('.course-feedback-main');
+            const scrollContainer = document.querySelector(
+                '.container-scrolly'
+            );
+            for (let i = 1; i <= 10; i++) {
+                let scrollDiv = document.createElement('div');
+                scrollDiv.className = 'container-scrolly-main';
+                scrollDiv.innerHTML = `
+                <div class="container-scrolly-main-item">
+                    <img
+                        src="./img/courseImages/courseCardImg.jpg"
+                        alt="course"
+                        class="container-scrolly-main-item-img"
+                    />
+                    <div class="container-scrolly-main-item-titledesc">
+                        <h4
+                            class="container-scrolly-main-item-titledesc-title"
+                        >
+                            Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Quae, perferendis.
+                        </h4>
+                        <p
+                            class="container-scrolly-main-item-titledesc-desc"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quisquam, ipsum laboriosam in
+                            quo ipsa non recusandae autem culpa dicta
+                            libero!
+                        </p>
+                    </div>
 
+                    <div class="container-scrolly-main-item-rating">
+                        <h5 class="container-scrolly-main-item-rating-text">
+                            4.7
+                        </h5>
+                        <svg
+                            class="container-scrolly-main-item-rating-icon"
+                        >
+                            <use
+                                xlink:href="img/sprite.svg#icon-star-full"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div class="container-scrolly-main-item-ratecount">
+                        <svg
+                            class="container-scrolly-main-item-rating-icon"
+                        >
+                            <use
+                                xlink:href="img/sprite.svg#icon-users"
+                            ></use>
+                        </svg>
+                        <span
+                            class="container-scrolly-main-item-ratecount-text"
+                            >11000</span
+                        >
+                    </div>
+                    <span class="container-scrolly-main-item-price"
+                        >&#8377; 12000</span
+                    >
+                    </div>
+                `;
+                scrollContainer.appendChild(scrollDiv);
+            }
+
+            const reviewDiv = document.querySelector('.course-feedback-main');
             for (let i = 1; i <= 10; i++) {
                 let mainReviewDiv = document.createElement('div');
                 mainReviewDiv.className = 'course-feedback-main-review';

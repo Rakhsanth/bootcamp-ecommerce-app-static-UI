@@ -5,9 +5,9 @@
     display: grid;
     grid-template-rows:
         50vh minmax(15rem, min-content) minmax(20rem, min-content) minmax(
-            50rem,
+            20rem,
             min-content
-        )
+        ) minmax(50rem, min-content)
         min-content 25vh;
     grid-template-columns: repeat(
         10,
