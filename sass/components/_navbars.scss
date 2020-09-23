@@ -1,57 +1,116 @@
 .top-header-navbar {
-    height: 60%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    &-title {
-        padding: 0 2rem;
-        display: inline-block;
-        font-size: 1.5rem;
-        letter-spacing: 0.2rem;
-        cursor: pointer;
-    }
+  &-title {
+    padding: 0 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+  }
 
-    &-dropdown {
-        position: absolute;
-        height: 0.1px;
-        width: 0.1px;
-        border-left: $line-seperator-color;
-        border-right: $line-seperator-color;
-        border-bottom: $line-seperator-color;
-        box-shadow: 0 0.3rem 0.3rem $line-seperator-color;
-        background-color: $white-background;
-        overflow: hidden;
-        opacity: 0;
-        transition: height 0.5s ease-out, opacity 0.5s ease-out 0.5s;
+  &-dropdown {
+    position: absolute;
+    height: 0.1px;
+    width: 0.1px;
+    border-left: $line-seperator-color;
+    border-right: $line-seperator-color;
+    border-bottom: $line-seperator-color;
+    box-shadow: 0 0.3rem 0.3rem $line-seperator-color;
+    background-color: $white-background;
+    overflow: hidden;
+    opacity: 0;
+    transition: width, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 
-        &-list {
-            &-item {
-                margin: 1rem 0rem;
-                padding: 1rem 2rem;
-                list-style: none;
+    &-list {
+      &-item {
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        list-style: none;
 
-                &-link {
-                    text-decoration: none;
-                    color: $text-light;
-                    font-size: 2rem;
-                    display: inline-block;
-                    width: 100%;
+        // &-dropdown {
+        //   position: absolute;
+        //   height: 0.1px;
+        //   width: 0.1px;
+        //   border-left: $line-seperator-color;
+        //   border-right: $line-seperator-color;
+        //   border-bottom: $line-seperator-color;
+        //   box-shadow: 0 0.3rem 0.3rem $line-seperator-color;
+        //   background-color: $white-background;
+        //   overflow: hidden;
+        //   opacity: 0;
+        //   transition: height 0.5s ease-out, opacity 0.5s ease-out 0.5s;
 
-                    &:hover {
-                        color: $btn-border-blue-light;
-                    }
-                }
-            }
+        //   &-list {
+        //     &-item {
+        //       margin: 1rem 0rem;
+        //       padding: 1rem 2rem;
+        //       list-style: none;
+
+        &-link {
+          text-decoration: none;
+          color: $text-light;
+          font-size: 2rem;
+          display: inline-block;
+          width: 100%;
+
+          &:hover {
+            color: $btn-border-blue-light;
+          }
         }
-    }
 
-    &:hover &-dropdown {
-        height: 60vh;
-        width: 20rem;
-        opacity: 1;
-        overflow: visible;
-        top: 100%;
+        &-nested-dropdown {
+          display: none;
+
+          &-list {
+            list-style: none;
+          }
+
+          &-list-item-link {
+            text-decoration: none;
+            color: $text-light;
+          }
+        }
+
+        &:hover &-nested-dropdown {
+          display: inline-flex;
+
+          position: relative;
+          margin-left: 18rem;
+
+          flex-direction: column;
+          border: $text-light 2px solid;
+          width: 8rem;
+          height: 5rem;
+          justify-content: space-around;
+        }
+
+        &-link {
+          text-decoration: none;
+          color: $text-light;
+          font-size: 2rem;
+          display: inline-block;
+          width: 100%;
+
+          &:hover {
+            color: $btn-border-blue-light;
+          }
+        }
+      }
     }
+  }
+
+  &:hover &-dropdown {
+    height: 60vh;
+    width: 20rem;
+    opacity: 1;
+    overflow: visible;
+    top: 100%;
+  }
 }

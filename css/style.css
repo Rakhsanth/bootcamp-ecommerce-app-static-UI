@@ -287,11 +287,37 @@ a {
     background-color: white;
     overflow: hidden;
     opacity: 0;
-    transition: height 0.5s ease-out, opacity 0.5s ease-out 0.5s; }
+    transition: width, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out; }
     .top-header-navbar-dropdown-list-item {
       margin: 1rem 0rem;
       padding: 1rem 2rem;
       list-style: none; }
+      .top-header-navbar-dropdown-list-item-link {
+        text-decoration: none;
+        color: #73726c;
+        font-size: 2rem;
+        display: inline-block;
+        width: 100%; }
+        .top-header-navbar-dropdown-list-item-link:hover {
+          color: #2896a9; }
+      .top-header-navbar-dropdown-list-item-nested-dropdown {
+        display: none; }
+        .top-header-navbar-dropdown-list-item-nested-dropdown-list {
+          list-style: none; }
+        .top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link {
+          text-decoration: none;
+          color: #73726c; }
+      .top-header-navbar-dropdown-list-item:hover .top-header-navbar-dropdown-list-item-nested-dropdown {
+        display: inline-flex;
+        position: relative;
+        margin-left: 18rem;
+        flex-direction: column;
+        border: #73726c 2px solid;
+        width: 8rem;
+        height: 5rem;
+        justify-content: space-around; }
       .top-header-navbar-dropdown-list-item-link {
         text-decoration: none;
         color: #73726c;
@@ -1159,3 +1185,128 @@ a {
       margin: 1rem 0;
       padding: 1rem 0;
       border-bottom: 1px solid #dcdacb; }
+
+.btn {
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer; }
+  .btn:focus {
+    outline: none; }
+  .btn-primary {
+    color: white;
+    fill: white;
+    background-color: #0f7c90;
+    border: 2px solid #0f7c90; }
+    .btn-primary:hover {
+      background-color: #094c59;
+      border: 2px solid black; }
+  .btn-secondary {
+    color: #2896a9;
+    fill: #2896a9;
+    background-color: white;
+    border: 2px solid #2896a9; }
+    .btn-secondary:hover {
+      color: black;
+      fill: black;
+      border: 2px solid black; }
+  .btn-tertiary {
+    color: white;
+    background-color: #be5a0e; }
+    .btn-tertiary:hover {
+      background-color: #ea5252; }
+  .btn-circle {
+    border-radius: 50%;
+    box-shadow: none; }
+    .btn-circle-sm {
+      height: 2rem;
+      width: 2rem; }
+    .btn-circle-md {
+      height: 2rem;
+      width: 5rem; }
+    .btn-circle-lg {
+      height: 2rem;
+      width: 5rem; }
+  .btn-icon {
+    width: 50%;
+    height: 50%; }
+  .btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .btn-sm {
+    height: 2rem;
+    width: 5rem; }
+  .btn-md {
+    height: 4rem;
+    width: 10rem; }
+  .btn-lg {
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem; }
+  .btn-text {
+    font-weight: bold; }
+  .btn-loginpage {
+    width: 350px;
+    height: 3em;
+    margin: 10px;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
+      color: black;
+      border: 2px solid black; }
+  .btn-facebook-login {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 3rem;
+    background-color: #1a538a; }
+    .btn-facebook-login:hover {
+      border: 2px solid black;
+      background-color: #1a5382; }
+  .btn-google-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 350px;
+    height: 3rem;
+    margin: 1rem;
+    background-color: white; }
+  .btn-loginpage {
+    height: 45px;
+    width: 95%;
+    background-color: #ec5252;
+    color: white; }
+    .btn-loginpage:hover {
+      border: black solid 2px;
+      background-color: #992337; }
+
+.course-review-btn {
+  height: 3rem; }
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55vh;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateY(-50%); }
+  .signup-container-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .signup-container a {
+    color: white; }
+  .signup-container input {
+    border: 3px #8a92a3 solid;
+    padding: 1.5em;
+    width: 350px;
+    height: 2em; }
+  .signup-container-signin {
+    margin-top: 3rem; }
+    .signup-container-signin a {
+      color: #007791; }
+  .signup-container-message {
+    position: absolute;
+    margin-bottom: 30rem; }
