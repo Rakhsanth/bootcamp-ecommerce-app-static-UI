@@ -1640,25 +1640,25 @@
                 }
             }
 
-            let tinyScreen = window.matchMedia('(max-width: 40em)');
-            tiny(tinyScreen); // Call listener function at run time
-            tinyScreen.addListener(tiny); // Attach listener function on state changes
-
-            let smallScreen = window.matchMedia('(max-width: 55em)');
-            small(smallScreen); // Call listener function at run time
-            smallScreen.addListener(small); // Attach listener function on state changes
-
-            let mediumScreen = window.matchMedia('(max-width: 70em)');
-            medium(mediumScreen); // Call listener function at run time
-            mediumScreen.addListener(medium); // Attach listener function on state changes
+            let largerScreen = window.matchMedia('(min-width: 85em)');
+            larger(largerScreen); // Call listener function at run time
+            largerScreen.addListener(larger); // Attach listener function on state changes
 
             let largeScreen = window.matchMedia('(max-width: 85em)');
             large(largeScreen); // Call listener function at run time
             largeScreen.addListener(large); // Attach listener function on state changes
 
-            let largerScreen = window.matchMedia('(min-width: 85em)');
-            larger(largerScreen); // Call listener function at run time
-            largerScreen.addListener(larger); // Attach listener function on state changes
+            let mediumScreen = window.matchMedia('(max-width: 70em)');
+            medium(mediumScreen); // Call listener function at run time
+            mediumScreen.addListener(medium); // Attach listener function on state changes
+
+            let smallScreen = window.matchMedia('(max-width: 55em)');
+            small(smallScreen); // Call listener function at run time
+            smallScreen.addListener(small); // Attach listener function on state changes
+
+            let tinyScreen = window.matchMedia('(max-width: 40em)');
+            tiny(tinyScreen); // Call listener function at run time
+            tinyScreen.addListener(tiny); // Attach listener function on state changes
         </script>
     </body>
 </html>
