@@ -4,7 +4,7 @@
     width: 100vw;
     display: grid;
     grid-template-rows:
-        50vh minmax(15rem, min-content) minmax(20rem, min-content) minmax(
+        50vh min-content minmax(15rem, min-content) minmax(20rem, min-content) minmax(
             20rem,
             min-content
         )
@@ -19,5 +19,17 @@
     overflow: hidden;
     @include respond(tab-port) {
         margin-top: 4rem;
+        grid-template-rows:
+            50vh min-content minmax(15rem, min-content) minmax(
+                20rem,
+                min-content
+            )
+            minmax(20rem, min-content)
+            minmax(50rem, min-content)
+            min-content 25vh;
+    }
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
     }
 }

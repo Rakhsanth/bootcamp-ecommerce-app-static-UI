@@ -63,11 +63,14 @@
 }
 
 .container-scrolly {
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     grid-column: col-start 1 / col-end 10;
     width: 65%;
     max-height: 50rem;
     overflow-y: scroll;
+    @include respond(tab-port) {
+        width: 100%;
+    }
 
     &-heading {
         margin-bottom: 1.5rem;
@@ -128,7 +131,12 @@
             &-ratecount {
                 &-text {
                     color: $text-light;
+                    font-size: 1.2rem;
                 }
+            }
+
+            &-price {
+                font-size: 1.2rem;
             }
         }
     }

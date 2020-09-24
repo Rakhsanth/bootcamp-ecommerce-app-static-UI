@@ -14,10 +14,10 @@ html {
         font-size: 56.25%;
     }
     @include respond(tab-port) {
-        font-size: 50%;
+        font-size: 45%;
     }
     @include respond(mobile) {
-        font-size: 37.5%;
+        font-size: 30.5%;
     }
 }
 
