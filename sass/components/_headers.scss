@@ -23,10 +23,10 @@
         background-size: contain;
         animation-name: fadein;
         animation-duration: 5s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: 3;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
         @include respond(tab-port) {
-            margin-left: 35%;
+            margin-left: 40%;
         }
     }
 
@@ -157,14 +157,9 @@
         margin-left: 4rem;
     }
 
-    &-icon-search {
-        margin-left: auto;
-        fill: $text-light;
-    }
-
     &-cart {
-        margin-left: 4rem;
-        margin-right: 7.5rem;
+        margin-left: auto;
+        margin-right: 5rem;
         position: relative;
 
         &-icon {

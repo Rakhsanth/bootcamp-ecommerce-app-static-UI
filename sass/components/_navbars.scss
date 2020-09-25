@@ -67,6 +67,7 @@
         $light-bar,
         rgba($text-light, 1)
     );
+    transition: width 0.5s ease-in-out;
     overflow: hidden;
     z-index: 55;
 

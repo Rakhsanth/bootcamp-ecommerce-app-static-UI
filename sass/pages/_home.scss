@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     border-bottom: 1px solid $line-seperator-color;
+    // z-index: -1;
 
     &-tab {
         display: flex;
@@ -59,4 +60,5 @@
     grid-column: col-start 1 / col-end 11;
     display: flex;
     border-bottom: 1px solid $line-seperator-color;
+    // z-index: -1;
 }

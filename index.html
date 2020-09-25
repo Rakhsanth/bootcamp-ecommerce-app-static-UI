@@ -102,9 +102,6 @@
                 <use xlink:href="img/sprite.svg#icon-menu"></use>
             </svg>
             <div class="top-header-logo"></div>
-            <svg class="small-header-icon-search">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
             <div class="small-header-cart">
                 <svg class="small-header-cart-icon">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -445,7 +442,7 @@
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
                     removeAllChildNodes(categoriesBootcampDiv);
-                    for (let i = 1; i <= 2; i++) {
+                    for (let i = 1; i <= 15; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
 
