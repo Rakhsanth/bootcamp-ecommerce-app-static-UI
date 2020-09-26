@@ -96,6 +96,108 @@
             <button class="btn btn-secondary btn-md">Log in</button>
             <button class="btn btn-primary btn-md">Sign up</button>
         </header>
+
+        <header class="small-header">
+            <svg class="small-header-icon-menu" onclick="openMenu(event)">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <div class="top-header-logo"></div>
+            <div class="small-header-cart">
+                <svg class="small-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="small-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+        </header>
+
+        <section class="sidenav" id="sidenav" onclick="closeMenu(event)">
+            <div class="sidenav-main">
+                <div class="top-header-search">
+                    <div class="top-header-search-bar">
+                        <input
+                            type="text"
+                            class="top-header-search-bar-input"
+                            placeholder="Search Courses or Bootcamps"
+                        />
+                    </div>
+                    <div class="top-header-search-icons">
+                        <svg class="top-header-search-icons-icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sidenav-main-top">
+                    <a href="#" class="sidenav-main-top-login">Login</a>
+                    <a href="#" class="sidenav-main-top-signup">Sign up</a>
+                </div>
+                <div class="sidenav-main-categories">
+                    <h3 class="sidenav-main-categories-header">Categories</h3>
+                    <ul class="sidenav-main-categories-list">
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Development
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Design
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Data Science
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Digital Marketing
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Finance
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidenav-close" id="sidenav-close">
+                <svg class="sidenav-close-icon" id="sidenav-close">
+                    <use
+                        xlink:href="img/sprite.svg#icon-cross"
+                        id="sidenav-close"
+                    ></use>
+                </svg>
+            </div>
+        </section>
+
         <main class="main-conatiner-home">
             <section class="hero-section">
                 <img
@@ -284,6 +386,22 @@
             const btnBorderBlueLight = 'rgb(40, 150, 169)';
             const lightGreySearchBarBorder = 'rgb(152, 149, 134)';
 
+            function openMenu(event) {
+                const sidenav = document.querySelector('.sidenav');
+                sidenav.style.width = '100vw';
+            }
+
+            function closeMenu(event) {
+                console.log(event);
+                if (
+                    event.target.id === 'sidenav' ||
+                    event.target.id === 'sidenav-close'
+                ) {
+                    const sidenav = document.querySelector('.sidenav');
+                    sidenav.style.width = '0vw';
+                }
+            }
+
             const headerSearchInput = document.querySelector(
                 '.top-header-search-bar-input'
             );
@@ -324,7 +442,7 @@
                     // If media query matches
                     removeAllChildNodes(categoriesDiv);
                     removeAllChildNodes(categoriesBootcampDiv);
-                    for (let i = 1; i <= 2; i++) {
+                    for (let i = 1; i <= 15; i++) {
                         let card = document.createElement('div');
                         card.classList.add('categories-card');
 
