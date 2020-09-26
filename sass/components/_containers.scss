@@ -86,6 +86,9 @@
     border-top: 1px solid $line-seperator-color;
     border-right: 1px solid $line-seperator-color;
     border-bottom: 1px solid $line-seperator-color;
+    @include respond(tab-port) {
+        border-right: none;
+    }
 }
 
 .filter-results-container {
@@ -94,7 +97,10 @@
     margin-left: -1rem;
     grid-row: 3 / 4;
     grid-column: col-start 3 / -1;
-    width: 95%;
+    width: 100%;
+    @include respond(tab-port) {
+        border-top: none;
+    }
 }
 
 .container-scrolly {
