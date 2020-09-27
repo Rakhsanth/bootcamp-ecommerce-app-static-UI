@@ -25,6 +25,7 @@
         animation-duration: 5s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
+        cursor: pointer;
         @include respond(tab-port) {
             margin-left: 40%;
         }

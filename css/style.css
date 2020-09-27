@@ -247,7 +247,8 @@ a {
     animation-name: fadein;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    cursor: pointer; }
     @media (max-width: 56.25em) {
       .top-header-logo {
         margin-left: 40%; } }
