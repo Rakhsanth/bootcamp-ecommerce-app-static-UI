@@ -240,11 +240,17 @@
                                 alt=""
                                 class="pubProfile-tabContent-profile-image-img"
                             />
-                            <button
-                                class="btn btn-primary pubProfile-tabContent-profile-image-btn"
+                            <label
+                                for="pubProfile-picture"
+                                class="btn btn-primary pubProfile-form-control-label text-center label-btn"
+                                >Change picture</label
                             >
-                                Change picture
-                            </button>
+                            <input
+                                id="pubProfile-picture"
+                                type="file"
+                                class="pubProfile-form-control-fileInput"
+                                multiple
+                            />
                         </div>
 
                         <div class="pubProfile-form-control">
@@ -297,8 +303,53 @@
                             value="Save"
                         />
                     </div>
-                    <div class="pubProfile-tabContent-bankDT"></div>
-                    <div class="pubProfile-tabContent-bootcamp"></div>
+                    <div class="pubProfile-tabContent-bankDT">
+                        <div class="pubProfile-form-control">
+                            <label
+                                for="account-number"
+                                class="pubProfile-form-control-label"
+                                >Account Number</label
+                            >
+                            <input
+                                id="account-number"
+                                type="text"
+                                class="pubProfile-form-control-input"
+                                placeholder="1234567890123456"
+                            />
+                        </div>
+                        <div class="pubProfile-form-control">
+                            <label
+                                for="ifsc"
+                                class="pubProfile-form-control-label"
+                                >IFSC code</label
+                            >
+                            <input
+                                id="ifsc"
+                                type="text"
+                                class="pubProfile-form-control-input"
+                                placeholder="abcd0002457"
+                            />
+                        </div>
+                        <input
+                            type="submit"
+                            class="btn btn-secondary pubProfile-form-submit"
+                            value="Save"
+                        />
+                    </div>
+                    <div class="pubProfile-tabContent-bootcamp">
+                        <button
+                            class="btn btn-primary btn-center pubBootcamp-create-btn"
+                        >
+                            <svg class="pubBootcamp-create-btn-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-plus-circle"
+                                />
+                            </svg>
+                            <span class="pubBootcamp-create-btn-text"
+                                >Create bootcamp</span
+                            >
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -371,30 +422,60 @@
                 }
                 event.target.classList.add('active');
                 if (event.srcElement.tagName === 'H5') {
+                    console.log(event);
                     event.target.parentElement.classList.add('active');
-                    if (event.target.parentElement.id === 'profile-tab')
+                    if (event.target.parentElement.id === 'profile-tab') {
                         profileTabContent.style.display = 'flex';
-                    if (event.target.parentElement.id === 'bank-tab')
+                    } else if (
+                        event.target.parentElement.id === 'bank-tab' ||
+                        event.target.parentElement.id === 'bootcamp-tab'
+                    ) {
+                        profileTabContent.style.display = 'none';
+                    }
+
+                    if (event.target.parentElement.id === 'bank-tab') {
                         bankTabContent.style.display = 'flex';
-                    if (event.target.parentElement.id === 'bootcamp-tab')
+                    } else if (
+                        event.target.parentElement.id === 'profile-tab' ||
+                        event.target.parentElement.id === 'bootcamp-tab'
+                    ) {
+                        bankTabContent.style.display = 'none';
+                    }
+
+                    if (event.target.parentElement.id === 'bootcamp-tab') {
                         bootcampTabContent.style.display = 'flex';
+                    } else if (
+                        event.target.parentElement.id === 'profile-tab' ||
+                        event.target.parentElement.id === 'bank-tab'
+                    ) {
+                        bootcampTabContent.style.display = 'none';
+                    }
                 } else {
                     event.target.classList.add('active');
                     if (event.target.id === 'profile-tab') {
                         profileTabContent.style.display = 'flex';
-                    } else {
+                    } else if (
+                        event.target.id === 'bank-tab' ||
+                        event.target.id === 'bootcamp-tab'
+                    ) {
                         profileTabContent.style.display = 'none';
                     }
 
                     if (event.target.id === 'bank-tab') {
                         bankTabContent.style.display = 'flex';
-                    } else {
+                    } else if (
+                        event.target.id === 'profile-tab' ||
+                        event.target.id === 'bootcamp-tab'
+                    ) {
                         bankTabContent.style.display = 'none';
                     }
 
                     if (event.target.id === 'bootcamp-tab') {
                         bootcampTabContent.style.display = 'flex';
-                    } else {
+                    } else if (
+                        event.target.id === 'profile-tab' ||
+                        event.target.id === 'bank-tab'
+                    ) {
                         bootcampTabContent.style.display = 'none';
                     }
                 }

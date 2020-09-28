@@ -1498,13 +1498,24 @@ a {
   .pubProfile-tabs-text {
     font-size: 1.5rem; }
 
+.ui.tabular.menu {
+  border-bottom: 2px solid #0f7c90; }
+
 .ui.tabular.menu .active.item {
   border-top-left-radius: 1rem !important;
-  border-top-right-radius: 1rem !important; }
+  border-top-right-radius: 1rem !important;
+  border-color: #0f7c90;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  margin-bottom: -2px; }
 
 .ui.segment[class*='bottom attached'] {
   border-radius: 0px 0px 1rem 1rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #dcdacb; }
+
+.ui.attached.segment {
+  border: 2px solid #0f7c90; }
 
 .pubProfile-tabContent-profile, .pubProfile-tabContent-bankDT, .pubProfile-tabContent-bootcamp {
   display: none;
@@ -1540,6 +1551,8 @@ a {
     border-radius: 0.5rem;
     text-indent: 1rem;
     border: 1px solid #989586; }
+    .pubProfile-form-control-input:active, .pubProfile-form-control-input:focus {
+      border: 2px solid #0f7c90; }
     .pubProfile-form-control-input::placeholder {
       font-size: 1.2rem; }
   .pubProfile-form-control-fileInput {
@@ -1558,3 +1571,12 @@ a {
   margin-bottom: 1rem;
   width: 30rem;
   height: 3rem; }
+
+.pubBootcamp-create-btn {
+  padding: 1rem 0; }
+  .pubBootcamp-create-btn-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem; }
+  .pubBootcamp-create-btn-text {
+    margin-right: 1rem; }
