@@ -1517,23 +1517,30 @@ a {
 .ui.attached.segment {
   border: 2px solid #0f7c90; }
 
-.pubProfile-tabContent-profile, .pubProfile-tabContent-bankDT, .pubProfile-tabContent-bootcamp {
-  display: none;
-  margin-top: 1rem;
-  flex-direction: column;
-  align-items: center; }
-
-.pubProfile-tabContent-profile {
-  display: flex; }
-  .pubProfile-tabContent-profile-image {
-    display: flex;
+.pubProfile-tabContent {
+  height: 60rem;
+  padding: 1rem 0; }
+  .pubProfile-tabContent-profile, .pubProfile-tabContent-bankDT, .pubProfile-tabContent-bootcamp {
+    position: relative;
+    display: none;
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
-    width: 30rem; }
-    .pubProfile-tabContent-profile-image-img {
-      width: 100%; }
-    .pubProfile-tabContent-profile-image-btn {
-      margin-top: 1rem;
-      height: 3rem; }
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; }
+  .pubProfile-tabContent-profile {
+    display: flex; }
+    .pubProfile-tabContent-profile-image {
+      display: flex;
+      flex-direction: column;
+      width: 30rem; }
+      .pubProfile-tabContent-profile-image-img {
+        width: 100%; }
+      .pubProfile-tabContent-profile-image-btn {
+        margin-top: 1rem;
+        height: 3rem; }
 
 .pubProfile-form-control {
   margin-top: 2rem;
@@ -1573,10 +1580,18 @@ a {
   height: 3rem; }
 
 .pubBootcamp-create-btn {
-  padding: 1rem 0; }
+  position: absolute;
+  top: 86%;
+  left: 94%;
+  padding: 1rem 0;
+  box-shadow: 0.5rem 0.5rem 0.5rem #dcdacb;
+  transition: all 0.2s ease-out; }
+  .pubBootcamp-create-btn:active {
+    transform: translateY(0.5rem);
+    box-shadow: none; }
   .pubBootcamp-create-btn-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 0 1rem; }
   .pubBootcamp-create-btn-text {
     margin-right: 1rem; }
