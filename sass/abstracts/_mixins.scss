@@ -1,0 +1,39 @@
+@mixin respond($breakpoint) {
+    // 600px / 16 = 37.5em as 1em = 16px
+    @if $breakpoint == mobile {
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        // 900px
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        // 1220px
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        // 1800px
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+}
+
+@mixin uxDevice($type) {
+    @if $type == touch {
+        @media (hover: none) {
+            @content;
+        }
+    }
+    @if $type == pointer {
+        @media (hover: hover) {
+            @content;
+        }
+    }
+}

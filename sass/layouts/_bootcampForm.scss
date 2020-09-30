@@ -1,0 +1,10 @@
+.main-conatiner-bootcampForm {
+    width: 90vw;
+    padding-top: 10rem;
+    margin: 0 auto;
+}
+
+.bootcamp-form-content-basic-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
