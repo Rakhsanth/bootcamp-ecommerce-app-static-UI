@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="top-header">
+            <div class="top-header-logo"></div>
+            <nav class="top-header-navbar">
+                <span class="top-header-navbar-title">Categories</span>
+                <div class="top-header-navbar-dropdown">
+                    <ul class="top-header-navbar-dropdown-list">
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-header-search">
+                <div class="top-header-search-bar">
+                    <input
+                        type="text"
+                        class="top-header-search-bar-input"
+                        placeholder="Search Courses or Bootcamps"
+                    />
+                </div>
+                <div class="top-header-search-icons">
+                    <svg class="top-header-search-icons-icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-header-cart">
+                <svg class="top-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="top-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+            <button class="btn btn-secondary btn-md">Log in</button>
+            <button class="btn btn-primary btn-md">Sign up</button>
+        </header>
+
+        <header class="small-header">
+            <svg class="small-header-icon-menu" onclick="openMenu(event)">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <div class="top-header-logo"></div>
+            <div class="small-header-cart">
+                <svg class="small-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="small-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+        </header>
+
+        <section class="sidenav" id="sidenav" onclick="closeMenu(event)">
+            <div class="sidenav-main">
+                <div class="top-header-search">
+                    <div class="top-header-search-bar">
+                        <input
+                            type="text"
+                            class="top-header-search-bar-input"
+                            placeholder="Search Courses or Bootcamps"
+                        />
+                    </div>
+                    <div class="top-header-search-icons">
+                        <svg class="top-header-search-icons-icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sidenav-main-top">
+                    <a href="#" class="sidenav-main-top-login">Login</a>
+                    <a href="#" class="sidenav-main-top-signup">Sign up</a>
+                </div>
+                <div class="sidenav-main-categories">
+                    <h3 class="sidenav-main-categories-header">Categories</h3>
+                    <ul class="sidenav-main-categories-list">
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Development
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Design
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Data Science
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Digital Marketing
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Finance
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidenav-close" id="sidenav-close">
+                <svg class="sidenav-close-icon" id="sidenav-close">
+                    <use
+                        xlink:href="img/sprite.svg#icon-cross"
+                        id="sidenav-close"
+                    ></use>
+                </svg>
+            </div>
+        </section>
+
+        <main class="main-conatiner-bootcampForm">
+            <div class="ui top attached two steps">
+                <div
+                    class="active step bootcamp-form-step"
+                    onclick="handleStepper(event)"
+                >
+                    <i aria-hidden="true" class="truck icon"></i>
+                    <div class="content">
+                        <div class="title">Basic information</div>
+                        <div class="description">
+                            Bootcamp and location specific information
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="disabled step bootcamp-form-step"
+                    onclick="handleStepper(event)"
+                >
+                    <i aria-hidden="true" class="payment icon"></i>
+                    <div class="content">
+                        <div class="title">Technical information</div>
+                        <div class="description">
+                            Bootcamp offerings, skillset and more
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <div class="bootcamp-form-content">
+                    <div class="bootcamp-form-content-basic">
+                        <div class="bootcamp-form-content-basic-picture">
+                            <img
+                                src="./img/courseImages/course.png"
+                                alt=""
+                                class="pubProfile-tabContent-profile-image-img"
+                            />
+                            <label
+                                for="pubProfile-picture"
+                                class="btn btn-primary pubProfile-form-control-label text-center label-btn"
+                                >Change picture</label
+                            >
+                            <input
+                                id="pubProfile-picture"
+                                type="file"
+                                class="pubProfile-form-control-fileInput"
+                                multiple
+                            />
+                        </div>
+                        <div class="bootcamp-form-content-basic-details">
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-name"
+                                    class="pubProfile-form-control-label"
+                                    >Bootcamp Name</label
+                                >
+                                <input
+                                    id="bootcamp-name"
+                                    type="text"
+                                    class="pubProfile-form-control-input"
+                                    placeholder="Tech Pllayground"
+                                />
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-state"
+                                    class="pubProfile-form-control-label"
+                                    >State</label
+                                >
+                                <input
+                                    id="bootcamp-state"
+                                    type="text"
+                                    class="pubProfile-form-control-input"
+                                    placeholder="Tamil Nadu"
+                                />
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-district"
+                                    class="pubProfile-form-control-label"
+                                    >District</label
+                                >
+                                <input
+                                    id="bootcamp-district"
+                                    type="text"
+                                    class="pubProfile-form-control-input"
+                                    placeholder="Madurai"
+                                />
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-address"
+                                    class="pubProfile-form-control-label"
+                                    >Complete address</label
+                                >
+                                <input
+                                    id="bootcamp-address"
+                                    type="text"
+                                    class="pubProfile-form-control-input"
+                                    placeholder="no: 10, xyz apartments, abc nagar, 10th cross street ........."
+                                />
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-pincode"
+                                    class="pubProfile-form-control-label"
+                                    >Pincode</label
+                                >
+                                <input
+                                    id="bootcamp-pincode"
+                                    type="text"
+                                    class="pubProfile-form-control-input"
+                                    placeholder="600026"
+                                />
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for="bootcamp-housing"
+                                    class="pubProfile-form-control-label"
+                                    >Housing provided</label
+                                >
+                                <select
+                                    id="bootcamp-housing"
+                                    class="pubProfile-form-control-input"
+                                    required
+                                >
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bootcamp-form-content-basic-bottom">
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-md"
+                            >
+                                back
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-md"
+                            >
+                                next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            const btnBorderBlueLight = 'rgb(40, 150, 169)';
+            const lightGreySearchBarBorder = 'rgb(152, 149, 134)';
+
+            function handleStepper(event) {
+                console.log(event);
+            }
+        </script>
+    </body>
+</html>

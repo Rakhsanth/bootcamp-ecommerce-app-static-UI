@@ -1,0 +1,152 @@
+.pubProfile-tabs {
+    grid-row: 1 / 2;
+    grid-column: col-start 1 / col-end 10;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+        width: 100%;
+    }
+
+    &-profile,
+    &-bankDT,
+    &-bootcamp {
+        cursor: pointer;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+    }
+}
+
+.ui.tabular.menu {
+    border-bottom: 2px solid $primary-btn-color;
+}
+.ui.tabular.menu .active.item {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    border-color: $primary-btn-color;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    margin-bottom: -2px;
+}
+.ui.segment[class*='bottom attached'] {
+    border-radius: 0px 0px 1rem 1rem;
+    box-shadow: 0.5rem 0.5rem 0.3rem $line-seperator-color;
+}
+.ui.attached.segment {
+    border: 2px solid $primary-btn-color;
+}
+
+.pubProfile-tabContent {
+    height: 60rem;
+    padding: 1rem 0;
+
+    &-profile,
+    &-bankDT,
+    &-bootcamp {
+        position: relative;
+        display: none;
+        margin-top: 1rem;
+        height: 100%;
+        width: 35rem;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    &-profile {
+        display: flex;
+
+        &-image {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+
+            &-img {
+                width: 100%;
+            }
+
+            &-btn {
+                margin-top: 1rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
+.pubProfile-form-control {
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        cursor: pointer;
+    }
+    &-label {
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+    &-input {
+        height: 3rem;
+        outline: none;
+        border-radius: 0.5rem;
+        text-indent: 1rem;
+        border: 1px solid $light-grey-search-bar-border;
+        &:active,
+        &:focus {
+            border: 2px solid $primary-btn-color;
+        }
+
+        &::placeholder {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-fileInput {
+        opacity: 0;
+        width: 0.1px;
+        height: 0.1px;
+        overflow: hidden;
+    }
+}
+
+.label-btn {
+    width: 100%;
+    height: 3rem;
+    padding-top: 0.3rem;
+}
+
+.pubProfile-form-submit {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+    height: 3rem;
+}
+
+.pubBootcamp-create-btn {
+    position: absolute;
+    top: 86%;
+    left: 94%;
+    padding: 1rem 0;
+    box-shadow: 0.5rem 0.5rem 0.5rem $line-seperator-color;
+    transition: all 0.2s ease-out;
+    &:active {
+        transform: translateY(0.5rem);
+        box-shadow: none;
+    }
+
+    &-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0 1rem;
+    }
+    &-text {
+        margin-right: 1rem;
+    }
+}
