@@ -1,0 +1,42 @@
+@import '../components/buttons';
+
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55vh;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-50%);
+  
+
+    &-form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a{
+        color: $white-background;
+    }
+    input{
+      border: 3px rgb(138,146,163) solid;
+      padding: 1.5em;
+      width:350px;
+      height: 2em;
+        
+    }
+
+    &-signin{
+         margin-top: 3rem;
+        a{
+            color: rgb(0,119,145);
+        }
+        
+        
+    }
+
+    &-message{
+        position: absolute;
+        margin-bottom: 30rem;
+    }
+
+}
