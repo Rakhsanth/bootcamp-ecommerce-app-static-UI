@@ -1,8 +1,25 @@
+.main-conatiner-bootcampForm .ui.steps:not(.unstackable) {
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.main-conatiner-bootcampForm .ui.steps:not(.unstackable) .step {
+    @include respond(tab-port) {
+        width: 50% !important;
+    }
+}
+
+.ui.steps {
+    border: 2px solid $primary-btn-color;
+}
 .ui.steps .step {
-    cursor: pointer;
+    border-right: 2px solid $primary-btn-color;
+    border-top: 1px solid $primary-btn-color;
+    // cursor: pointer;
 }
 .ui.steps .step.active {
-    cursor: pointer;
+    // cursor: pointer;
 }
 
 .bootcamp-form-content {
@@ -16,6 +33,9 @@
         flex-direction: column;
         width: 30%;
         margin: 0 auto;
+        @include respond(mobile) {
+            width: 40%;
+        }
     }
 
     &-details {

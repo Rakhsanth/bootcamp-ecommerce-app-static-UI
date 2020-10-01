@@ -73,6 +73,18 @@ a {
   cursor: pointer; }
   .btn:focus {
     outline: none; }
+  .btn:disabled {
+    cursor: not-allowed;
+    color: #3c3b37;
+    fill: #dcdacb;
+    background-color: white;
+    border: 1px solid #dcdacb; }
+    .btn:disabled:hover {
+      cursor: not-allowed;
+      color: #3c3b37;
+      fill: #dcdacb;
+      background-color: white;
+      border: 1px solid #dcdacb; }
   .btn-primary {
     color: white;
     fill: white;
@@ -944,11 +956,16 @@ a {
 .main-conatiner-bootcampForm {
   width: 90vw;
   padding-top: 10rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 5rem; }
 
 .bootcamp-form-content-basic-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 37.5em) {
+    .bootcamp-form-content-basic-details {
+      display: flex;
+      flex-direction: column; } }
 
 .hero-section {
   grid-row: 1 / 2;
@@ -1006,6 +1023,18 @@ a {
   cursor: pointer; }
   .btn:focus {
     outline: none; }
+  .btn:disabled {
+    cursor: not-allowed;
+    color: #3c3b37;
+    fill: #dcdacb;
+    background-color: white;
+    border: 1px solid #dcdacb; }
+    .btn:disabled:hover {
+      cursor: not-allowed;
+      color: #3c3b37;
+      fill: #dcdacb;
+      background-color: white;
+      border: 1px solid #dcdacb; }
   .btn-primary {
     color: white;
     fill: white;
@@ -1529,6 +1558,18 @@ a {
   cursor: pointer; }
   .btn:focus {
     outline: none; }
+  .btn:disabled {
+    cursor: not-allowed;
+    color: #3c3b37;
+    fill: #dcdacb;
+    background-color: white;
+    border: 1px solid #dcdacb; }
+    .btn:disabled:hover {
+      cursor: not-allowed;
+      color: #3c3b37;
+      fill: #dcdacb;
+      background-color: white;
+      border: 1px solid #dcdacb; }
   .btn-primary {
     color: white;
     fill: white;
@@ -1684,6 +1725,9 @@ a {
 .pubProfile-tabContent {
   height: 60rem;
   padding: 1rem 0; }
+  @media (max-width: 37.5em) {
+    .pubProfile-tabContent {
+      height: 75rem; } }
   .pubProfile-tabContent-profile, .pubProfile-tabContent-bankDT, .pubProfile-tabContent-bootcamp {
     position: relative;
     display: none;
@@ -1706,6 +1750,9 @@ a {
       .pubProfile-tabContent-profile-image-btn {
         margin-top: 1rem;
         height: 3rem; }
+        @media (max-width: 37.5em) {
+          .pubProfile-tabContent-profile-image-btn {
+            height: 5rem; } }
   .pubProfile-tabContent-bootcamp {
     width: 100%; }
 
@@ -1714,7 +1761,7 @@ a {
   width: 90%;
   display: flex;
   flex-direction: column; }
-  .pubProfile-form-control > * {
+  .pubProfile-form-control input {
     cursor: pointer; }
   .pubProfile-form-control-label {
     padding-left: 0.5rem;
@@ -1729,6 +1776,15 @@ a {
       border: 2px solid #0f7c90; }
     .pubProfile-form-control-input::placeholder {
       font-size: 1.2rem; }
+  .pubProfile-form-control-radio {
+    width: 100%;
+    display: flex; }
+    .pubProfile-form-control-radio-set {
+      display: flex;
+      width: 50%;
+      align-items: center; }
+      .pubProfile-form-control-radio-set > * {
+        cursor: pointer; }
   .pubProfile-form-control-fileInput {
     opacity: 0;
     width: 0.1px;
@@ -1739,12 +1795,18 @@ a {
   width: 100%;
   height: 3rem;
   padding-top: 0.3rem; }
+  @media (max-width: 37.5em) {
+    .label-btn {
+      height: 5rem; } }
 
 .pubProfile-form-submit {
   margin-top: 5rem;
   margin-bottom: 1rem;
   width: 30rem;
   height: 3rem; }
+  @media (max-width: 37.5em) {
+    .pubProfile-form-submit {
+      height: 5rem; } }
 
 .pubBootcamp-create-btn {
   position: absolute;
@@ -1763,11 +1825,21 @@ a {
   .pubBootcamp-create-btn-text {
     margin-right: 1rem; }
 
-.ui.steps .step {
-  cursor: pointer; }
+@media (max-width: 56.25em) {
+  .main-conatiner-bootcampForm .ui.steps:not(.unstackable) {
+    display: flex;
+    flex-direction: row; } }
 
-.ui.steps .step.active {
-  cursor: pointer; }
+@media (max-width: 56.25em) {
+  .main-conatiner-bootcampForm .ui.steps:not(.unstackable) .step {
+    width: 50% !important; } }
+
+.ui.steps {
+  border: 2px solid #0f7c90; }
+
+.ui.steps .step {
+  border-right: 2px solid #0f7c90;
+  border-top: 1px solid #0f7c90; }
 
 .bootcamp-form-content {
   margin: 2rem auto;
@@ -1778,6 +1850,9 @@ a {
   flex-direction: column;
   width: 30%;
   margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .bootcamp-form-content-basic-picture {
+      width: 40%; } }
 
 .bootcamp-form-content-basic-details {
   padding: 0 10rem; }

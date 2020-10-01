@@ -8,6 +8,21 @@
     &:focus {
         outline: none;
     }
+    &:disabled {
+        cursor: not-allowed;
+        color: $text-dark;
+        fill: $line-seperator-color;
+        background-color: $white-background;
+        border: 1px solid $line-seperator-color;
+
+        &:hover {
+            cursor: not-allowed;
+            color: $text-dark;
+            fill: $line-seperator-color;
+            background-color: $white-background;
+            border: 1px solid $line-seperator-color;
+        }
+    }
 
     &-primary {
         color: $white-background;

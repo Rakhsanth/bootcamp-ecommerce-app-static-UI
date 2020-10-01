@@ -323,24 +323,127 @@
                             </div>
                             <div class="pubProfile-form-control">
                                 <label
-                                    for="bootcamp-housing"
+                                    for=""
                                     class="pubProfile-form-control-label"
                                     >Housing provided</label
                                 >
-                                <select
-                                    id="bootcamp-housing"
-                                    class="pubProfile-form-control-input"
-                                    required
+                                <div class="pubProfile-form-control-radio">
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="housing-yes"
+                                            type="radio"
+                                            name="housing"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="housing-yes"
+                                            class="pubProfile-form-control-label"
+                                            >Yes</label
+                                        >
+                                    </div>
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="housing-no"
+                                            type="radio"
+                                            name="housing"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="housing-no"
+                                            class="pubProfile-form-control-label"
+                                            >No</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for=""
+                                    class="pubProfile-form-control-label"
+                                    >Job assistance provided</label
                                 >
-                                    <option value="true">Yes</option>
-                                    <option value="false">No</option>
-                                </select>
+                                <div class="pubProfile-form-control-radio">
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="job-assistance-yes"
+                                            type="radio"
+                                            name="job-assistance"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="job-assistance-yes"
+                                            class="pubProfile-form-control-label"
+                                            >Yes</label
+                                        >
+                                    </div>
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="job-assistance-no"
+                                            type="radio"
+                                            name="job-assistance"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="job-assistance-no"
+                                            class="pubProfile-form-control-label"
+                                            >No</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pubProfile-form-control">
+                                <label
+                                    for=""
+                                    class="pubProfile-form-control-label"
+                                    >Job guaranteed</label
+                                >
+                                <div class="pubProfile-form-control-radio">
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="job-guaranteed-yes"
+                                            type="radio"
+                                            name="job-guaranteed"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="job-guaranteed-yes"
+                                            class="pubProfile-form-control-label"
+                                            >Yes</label
+                                        >
+                                    </div>
+                                    <div
+                                        class="pubProfile-form-control-radio-set"
+                                    >
+                                        <input
+                                            id="job-guaranteed-no"
+                                            type="radio"
+                                            name="job-guaranteed"
+                                            class="pubProfile-form-control-input"
+                                        />
+                                        <label
+                                            for="job-guaranteed-no"
+                                            class="pubProfile-form-control-label"
+                                            >No</label
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="bootcamp-form-content-basic-bottom">
                             <button
                                 type="button"
                                 class="btn btn-primary btn-md"
+                                disabled
                             >
                                 back
                             </button>
@@ -359,8 +462,38 @@
             const btnBorderBlueLight = 'rgb(40, 150, 169)';
             const lightGreySearchBarBorder = 'rgb(152, 149, 134)';
 
-            function handleStepper(event) {
+            function openMenu(event) {
+                const sidenav = document.querySelector('.sidenav');
+                sidenav.style.width = '100vw';
+            }
+
+            function closeMenu(event) {
                 console.log(event);
+                if (
+                    event.target.id === 'sidenav' ||
+                    event.target.id === 'sidenav-close'
+                ) {
+                    const sidenav = document.querySelector('.sidenav');
+                    sidenav.style.width = '0vw';
+                }
+            }
+
+            const headerSearchInput = document.querySelector(
+                '.top-header-search-bar-input'
+            );
+            headerSearchInput.addEventListener('focus', searchInputFocus);
+            headerSearchInput.addEventListener('focusout', searchInputFocusOut);
+            function searchInputFocus() {
+                const headerSearchArea = document.querySelector(
+                    '.top-header-search'
+                );
+                headerSearchArea.style.border = `2px solid ${btnBorderBlueLight}`;
+            }
+            function searchInputFocusOut() {
+                const headerSearchArea = document.querySelector(
+                    '.top-header-search'
+                );
+                headerSearchArea.style.border = `2px solid ${lightGreySearchBarBorder}`;
             }
         </script>
     </body>
