@@ -9,7 +9,12 @@
 .center-h-v {
     margin-top: 50%;
     margin-left: 50%;
-    // transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-vertically {
+    margin-top: 50%;
+    transform: translateY(-50%);
 }
 
 .image-overlay {
@@ -18,4 +23,9 @@
         $light-bar,
         rgba($text-light, 1)
     );
+}
+
+.focus-tab {
+    color: $text-dark;
+    border-bottom: 1px solid;
 }
