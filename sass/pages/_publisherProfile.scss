@@ -43,6 +43,9 @@
 .pubProfile-tabContent {
     height: 60rem;
     padding: 1rem 0;
+    @include respond(mobile) {
+        height: 75rem;
+    }
 
     &-profile,
     &-bankDT,
@@ -74,8 +77,15 @@
             &-btn {
                 margin-top: 1rem;
                 height: 3rem;
+                @include respond(mobile) {
+                    height: 5rem;
+                }
             }
         }
+    }
+
+    &-bootcamp {
+        width: 100%;
     }
 }
 
@@ -85,7 +95,7 @@
     display: flex;
     flex-direction: column;
 
-    & > * {
+    & input {
         cursor: pointer;
     }
     &-label {
@@ -107,7 +117,19 @@
             font-size: 1.2rem;
         }
     }
+    &-radio {
+        width: 100%;
+        display: flex;
+        &-set {
+            display: flex;
+            width: 50%;
+            align-items: center;
 
+            & > * {
+                cursor: pointer;
+            }
+        }
+    }
     &-fileInput {
         opacity: 0;
         width: 0.1px;
@@ -120,6 +142,9 @@
     width: 100%;
     height: 3rem;
     padding-top: 0.3rem;
+    @include respond(mobile) {
+        height: 5rem;
+    }
 }
 
 .pubProfile-form-submit {
@@ -127,6 +152,9 @@
     margin-bottom: 1rem;
     width: 30rem;
     height: 3rem;
+    @include respond(mobile) {
+        height: 5rem;
+    }
 }
 
 .pubBootcamp-create-btn {

@@ -2,9 +2,15 @@
     width: 90vw;
     padding-top: 10rem;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
 .bootcamp-form-content-basic-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include respond(mobile) {
+        display: flex;
+        flex-direction: column;
+    }
 }
