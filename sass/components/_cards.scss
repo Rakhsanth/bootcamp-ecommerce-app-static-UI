@@ -37,9 +37,16 @@
             height: 45rem;
         }
     }
-    &:hover:nth-last-child(1) .categories-card-details-container {
+    &:hover:nth-last-of-type(1) .categories-card-details-container {
         @include uxDevice(pointer) {
-            left: -225%;
+            left: -180%;
+            width: 35rem;
+            height: 45rem;
+        }
+    }
+    &:hover:nth-of-type(1) .categories-card-details-container {
+        @include uxDevice(pointer) {
+            left: 100%;
             width: 35rem;
             height: 45rem;
         }
