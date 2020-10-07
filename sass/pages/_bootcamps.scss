@@ -1,0 +1,18 @@
+.filter-result-card-button{
+    button{
+    background-color: rgb(255,231,153);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    position: absolute;
+    margin-left: 100rem;
+    margin-top: 5rem;
+    
+}
+
+.filter-result-container{
+    display: flex;
+    position: relative;
+}
