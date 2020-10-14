@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="top-header-logo"></div>
+      <nav class="top-header-navbar">
+        <span class="top-header-navbar-title">Categories</span>
+        <div class="top-header-navbar-dropdown">
+          <ul class="top-header-navbar-dropdown-list">
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Development</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                      ><span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses</span
+                      >
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Design</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Data Science</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Digital Marketing</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Finance</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="top-header-search">
+        <div class="top-header-search-bar">
+          <input
+            type="text"
+            class="top-header-search-bar-input"
+            placeholder="Search Courses or Bootcamps"
+          />
+        </div>
+        <div class="top-header-search-icons">
+          <svg class="top-header-search-icons-icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="top-header-cart">
+        <svg class="top-header-cart-icon">
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
+        </svg>
+        <span class="top-header-cart-count"
+          ><span class="top-header-cart-count-text">10</span></span
+        >
+      </div>
+      <button class="btn btn-secondary btn-md">Log in</button>
+      <button class="btn btn-primary btn-md">Sign up</button>
+    </header>
+    <main class="main-container-bootcamp">
+      <img
+        src="img/hero-image.jpg"
+        alt="bootcamp-image-title"
+        class="bootcamp-image"
+      />
+      <span class="image-overlay bootcamp-image-overlay"></span>
+      <div class="bootcamp-title-details">
+        <h2 class="bootcamp-title-name">Lorem ipsum dolor sit.</h2>
+        <h4 class="bootcamp-title-address">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h4>
+      </div>
+      <div class="bootcamp-prompt">
+        <div class="bootcamp-video"></div>
+        <div class="bootcamp-prompt-details">
+          <button class="btn-secondary btn-enroll">Enroll</button>
+        </div>
+      </div>
+      <div class="bootcamp-desc">
+        <h2 class="bootcamp-desc-title">What's Cool here</h2>
+        <ul class="bootcamp-desc-list">
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+          <li class="bootcamp-desc-list-item">
+            <svg class="bootcamp-desc-list-item-icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            <h5 class="bootcamp-desc-list-item-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div class="bootcamp-small-desc">
+        <h2 class="bootcamp-small-desc-title">Description</h2>
+        <p class="bootcamp-small-desc-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+          impedit nobis et animi excepturi, debitis, facilis ex, id dolorum
+          dignissimos velit eum porro assumenda necessitatibus accusantium. Eum
+          sed eveniet voluptate nesciunt? Dolorem, commodi autem expedita, rem
+          iste delectus distinctio accusantium asperiores accusamus, voluptas
+          quam nisi consequuntur minus tenetur alias debitis.
+        </p>
+      </div>
+      <div class="bootcamp-courses-offered">
+        <h2 class="bootcamp-courses-offered-title">
+          Course offered by this bootcamp
+        </h2>
+        <div class="bootcamp-courses-container">
+          <div class="bootcamp-courses-offered-item">
+            <img
+              src="./img/courseImages/courseCardImg.jpg"
+              alt="courses-image"
+              class="bootcamp-courses-offered-item-img"
+            />
+            <div class="bootcamp-courses-offered-item-details">
+              <div class="bootcamp-courses-offered-item-details-title">
+                <h3>Lorem ipsum dolor sit.</h3>
+              </div>
+              <div class="bootcamp-courses-offered-item-details-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fuga ipsam placeat. Accusamus excepturi similique
+                rerum, inventore nisi obcaecati, eum libero quos natus, sunt
+                enim?
+              </div>
+              <div class="bootcamp-courses-offered-item-details-rating">
+                <span
+                  class="bootcamp-courses-offered-item-details-rating-number"
+                  >4</span
+                >
+                <div class="bootcamp-courses-offered-item-details-rating-stars">
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <span class="filter-result-card-price">&#8377; 15000</span>
+          </div>
+        </div>
+      </div>
+      <div class="bootcamp-nearby-scroll" onscroll="getScrollDetails(event)">
+        <div class="bootcamp-nearby-scroll-title">
+          <h2>Bootcamps nearby</h2>
+        </div>
+        <div class="bootcamp-nearby-scroll-container">
+          <div class="bootcamp-nearby-scroll-main">
+            <div class="bootcamp-nearby-scroll-content">
+              <img
+                src="./img/courseImages/courseCardImg.jpg"
+                alt="courses-image"
+                class="bootcamp-nearby-scroll-content-img"
+              />
+              <div class="bootcamp-nearby-scroll-content-titledesc">
+                <h3 class="bootcamp-nearby-scroll-content-titledesc-title">
+                  Lorem ipsum dolor sit.
+                </h3>
+                <p class="bootcamp-nearby-scroll-content-titledesc-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                  animi nemo deleniti dolore ipsum! Velit repellat autem
+                  inventore sapiente omnis illo nisi tempora dolorum, accusamus
+                  necessitatibus sint. Praesentium, laudantium harum!
+                </p>
+              </div>
+              <div class="bootcamp-nearby-scroll-content-rating">
+                <h5 class="bootcamp-nearby-scroll-content-rating-text">3.5</h5>
+                <svg class="bootcamp-nearby-scroll-content-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bootcamp-feedback-main-container">
+        <div class="bootcamp-feedback-stats-container">
+          <div class="bootcamp-feedback-stats-figures">
+            <div class="bootcamp-feedback-stats-figures-number">4</div>
+            <div class="bootcamp-feedback-stats-figures-stars">
+              <span class="stars-overlay"></span>
+              <svg class="bootcamp-feedback-stats-figures-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-stats-figures-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-stats-figures-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-stats-figures-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+            </div>
+            <p class="bootcamp-feedback-stats-figures-desc">Bootcamp Rating</p>
+          </div>
+          <div class="bootcamp-feedback-rating">
+            <div class="bootcamp-feedback-rating-rating1">
+              <div class="bootcamp-feedback-rating-rating1-bar">
+                <span class="bootcamp-feedback-rating-rating1-bar-empty"></span>
+                <span class="bootcamp-feedback-rating-rating1-bar-fill"></span>
+              </div>
+              <div class="bootcamp-feedback-rating-stars">
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="bootcamp-feedback-rating-rating2">
+              <div class="bootcamp-feedback-rating-rating2-bar">
+                <span class="bootcamp-feedback-rating-rating2-bar-empty"></span>
+                <span class="bootcamp-feedback-rating-rating2-bar-fill"></span>
+              </div>
+              <div class="bootcamp-feedback-rating-stars">
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="bootcamp-feedback-rating-rating3">
+              <div class="bootcamp-feedback-rating-rating3-bar">
+                <span class="bootcamp-feedback-rating-rating3-bar-empty"></span>
+                <span class="bootcamp-feedback-rating-rating3-bar-fill"></span>
+              </div>
+              <div class="bootcamp-feedback-rating-stars">
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="bootcamp-feedback-rating-rating4">
+              <div class="bootcamp-feedback-rating-rating4-bar">
+                <span class="bootcamp-feedback-rating-rating4-bar-empty"></span>
+                <span class="bootcamp-feedback-rating-rating4-bar-fill"></span>
+              </div>
+              <div class="bootcamp-feedback-rating-stars">
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="bootcamp-feedback-rating-rating5">
+              <div class="bootcamp-feedback-rating-rating5-bar">
+                <span class="bootcamp-feedback-rating-rating5-bar-empty"></span>
+                <span class="bootcamp-feedback-rating-rating5-bar-fill"></span>
+              </div>
+              <div class="bootcamp-feedback-rating-stars">
+                <svg class="bootcamp-feedback-main-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bootcamp-feedback-reviews-container">
+          <h2 class="bootcamp-feedback-reviews-heading">Testimonials</h2>
+
+          <div class="bootcamp-feedback-review">
+            <h5 class="bootcamp-feedback-review-author">John Doe</h5>
+            <div class="bootcamp-feedback-review-stars">
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-top-rating-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <p class="bootcamp-feedback-review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              veniam obcaecati exercitationem quis sed temporibus corrupti
+              placeat reprehenderit! Dolore iste repellat illo nesciunt tempore
+              fugit ad reiciendis iusto sit quos! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ad odit earum nobis debitis! Sunt,
+              eligendi tenetur. Temporibus beatae voluptatem architecto quisquam
+              pariatur debitis? Temporibus iusto incidunt beatae cum aliquid
+              enim?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const courseContainer = document.querySelector(
+        ".bootcamp-courses-container"
+      );
+      for (let count = 1; count <= 5; count++) {
+        let itemDiv = document.createElement("div");
+        itemDiv.className = "bootcamp-courses-offered-item";
+        itemDiv.innerHTML = ` <img
+              src="./img/courseImages/courseCardImg.jpg"
+              alt="courses-image"
+              class="bootcamp-courses-offered-item-img"
+            />
+            <div class="bootcamp-courses-offered-item-details">
+              <div class="bootcamp-courses-offered-item-details-title">
+                <h3>Lorem ipsum dolor sit.</h3>
+              </div>
+              <div class="bootcamp-courses-offered-item-details-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fuga ipsam placeat. Accusamus excepturi similique
+                rerum, inventore nisi obcaecati, eum libero quos natus, sunt
+                enim?
+              </div>
+              <div class="bootcamp-courses-offered-item-details-rating">
+                <span
+                  class="bootcamp-courses-offered-item-details-rating-number"
+                  >4</span
+                >
+                <div class="bootcamp-courses-offered-item-details-rating-stars">
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg
+                    class="bootcamp-courses-offered-item-details-rating-stars-star"
+                  >
+                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <span class="filter-result-card-price">&#8377; 15000</span>`;
+        courseContainer.appendChild(itemDiv);
+      }
+      const scrollContainer = document.querySelector(
+        ".bootcamp-nearby-scroll-container"
+      );
+      for (let i = 1; i <= 10; i++) {
+        let scrollDiv = document.createElement("div");
+        scrollDiv.className = "bootcamp-nearby-scroll-main";
+        scrollDiv.innerHTML = `   <div class="bootcamp-nearby-scroll-content">
+              <img
+                src="./img/courseImages/courseCardImg.jpg"
+                alt="courses-image"
+                class="bootcamp-nearby-scroll-content-img"
+              />
+              <div class="bootcamp-nearby-scroll-content-titledesc">
+                <h3 class="bootcamp-nearby-scroll-content-titledesc-title">
+                  Lorem ipsum dolor sit.
+                </h3>
+                <p class="bootcamp-nearby-scroll-content-titledesc-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                  animi nemo deleniti dolore ipsum! Velit repellat autem
+                  inventore sapiente omnis illo nisi tempora dolorum, accusamus
+                  necessitatibus sint. Praesentium, laudantium harum!
+                </p>
+              </div>
+              <div class="bootcamp-nearby-scroll-content-rating">
+                <h5 class="bootcamp-nearby-scroll-content-rating-text">3.5</h5>
+                <svg class="bootcamp-nearby-scroll-content-rating-star">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>`;
+        scrollContainer.appendChild(scrollDiv);
+      }
+
+      const feedbackContainer = document.querySelector(
+        ".bootcamp-feedback-reviews-container"
+      );
+
+      for (let i = 1; i <= 5; i++) {
+        let feedbackDiv = document.createElement("div");
+        feedbackDiv.className = "bootcamp-feedback-review";
+        feedbackDiv.innerHTML = `<h5 class="bootcamp-feedback-review-author">John Doe</h5>
+            <div class="bootcamp-feedback-review-stars">
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-review-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="bootcamp-feedback-top-rating-stars-star">
+                <use xlink:href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+              <p class="bootcamp-feedback-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                veniam obcaecati exercitationem quis sed temporibus corrupti
+                placeat reprehenderit! Dolore iste repellat illo nesciunt
+                tempore fugit ad reiciendis iusto sit quos! Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Ad odit earum nobis
+                debitis! Sunt, eligendi tenetur. Temporibus beatae voluptatem
+                architecto quisquam pariatur debitis? Temporibus iusto incidunt
+                beatae cum aliquid enim?
+              </p>`;
+
+        feedbackContainer.appendChild(feedbackDiv);
+      }
+    </script>
+  </body>
+</html>
