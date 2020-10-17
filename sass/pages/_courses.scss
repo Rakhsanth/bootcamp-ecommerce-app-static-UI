@@ -131,6 +131,7 @@
         color: $btn-border-blue-light;
         font-size: 1.2rem;
         font-weight: bold;
+        cursor: pointer;
 
         &:hover,
         &:active,
@@ -148,4 +149,3 @@
         transform: translateY(-65%);
     }
 }
-
