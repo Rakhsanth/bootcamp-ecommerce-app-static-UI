@@ -1018,6 +1018,16 @@ a {
   column-gap: 1rem;
   overflow: hidden; }
 
+.main-container-courseForm {
+  width: 90vw;
+  padding-top: 10rem;
+  margin: 0 auto;
+  margin-bottom: 5rem; }
+
+.course-form-content-basic-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
 .hero-section {
   grid-row: 1 / 2;
   grid-column: col-start 1 / col-end 11; }
@@ -2268,3 +2278,21 @@ a {
     .bootcamp-feedback-reviews-container .bootcamp-feedback-review-text {
       font-size: 1.25rem;
       border-bottom: 1px solid #dcdacb; }
+
+.course-form-content-basic-picture {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto; }
+
+.course-form-content-basic-details {
+  padding: 0 10rem; }
+
+.course-form-content-basic-bottom {
+  padding: 0 10rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-start; }
+
+.pubProfile-form-control input[type=number] {
+  -moz-appearance: textfield; }

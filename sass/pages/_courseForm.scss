@@ -1,0 +1,28 @@
+.course-form-content-basic {
+    &-picture {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 auto;
+       
+    }
+
+    &-details {
+        padding: 0 10rem;
+
+    }
+
+    &-bottom {
+        padding: 0 10rem;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+.pubProfile-form-control{
+    input[type=number] {
+        -moz-appearance:textfield;
+    }
+}
