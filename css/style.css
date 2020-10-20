@@ -1990,6 +1990,8 @@ a {
           font-weight: bolder; }
         .cart-items-container .cart-items-card-text-desc {
           font-size: 1.2rem; }
+        .cart-items-container .cart-items-card-text button {
+          margin-left: 75%; }
       .cart-items-container .cart-items-card-price {
         margin-left: auto;
         margin-right: 3rem;
