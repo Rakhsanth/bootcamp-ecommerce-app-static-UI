@@ -382,7 +382,8 @@ a {
   .small-header-cart {
     margin-left: auto;
     margin-right: 5rem;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .small-header-cart-icon {
       fill: #0f7c90; }
     .small-header-cart-count {
@@ -1013,6 +1014,14 @@ a {
     .bootcamp-form-content-basic-details {
       display: flex;
       flex-direction: column; } }
+
+.main-conatiner-cart {
+  margin-top: 10rem;
+  padding: 0 10rem;
+  display: grid;
+  grid-template-rows: 15rem minmax(60rem, min-content) 30rem;
+  grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
+  grid-gap: 2rem; }
 
 .hero-section {
   grid-row: 1 / 2;
@@ -1941,3 +1950,58 @@ a {
 .filter-result-container {
   display: flex;
   position: relative; }
+
+.shoping-header {
+  grid-row: 1 / 2;
+  grid-column: col-start 1 / col-end 10;
+  height: 100%;
+  width: 100%;
+  background-color: #505763;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .shoping-header-text {
+    font-size: 3rem;
+    color: white; }
+
+.cart-items {
+  grid-row: 2 / 3;
+  grid-column: col-start 1 / col-end 7;
+  display: flex;
+  flex-direction: column; }
+  .cart-items-text {
+    font-size: 2rem;
+    font-weight: bolder; }
+  .cart-items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .cart-items-container .cart-items-card {
+      height: 10rem;
+      display: flex;
+      margin: 1rem 0; }
+      .cart-items-container .cart-items-card-img {
+        width: 20rem; }
+      .cart-items-container .cart-items-card-text {
+        margin-left: 1rem;
+        width: 60%; }
+        .cart-items-container .cart-items-card-text-title {
+          font-size: 1.6rem;
+          font-weight: bolder; }
+        .cart-items-container .cart-items-card-text-desc {
+          font-size: 1.2rem; }
+      .cart-items-container .cart-items-card-price {
+        margin-left: auto;
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        color: #992337; }
+
+.cart-checkout {
+  grid-row: 2 / 3;
+  grid-column: col-start 8 / col-end 10;
+  height: 15rem;
+  margin-top: 50%;
+  transform: translateY(-50%); }
+  .cart-checkout-total-price {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
