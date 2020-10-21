@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="top-header">
+            <div class="top-header-logo"></div>
+            <nav class="top-header-navbar">
+                <span class="top-header-navbar-title">Categories</span>
+                <div class="top-header-navbar-dropdown">
+                    <ul class="top-header-navbar-dropdown-list">
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Development</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Design</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Data Science</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Digital Marketing</span
+                                ></a
+                            >
+                        </li>
+                        <li class="top-header-navbar-dropdown-list-item">
+                            <a
+                                href="#"
+                                class="top-header-navbar-dropdown-list-item-link"
+                                onclick="handleTabs(event)"
+                                ><span
+                                    class="top-header-navbar-dropdown-list-item-link-text"
+                                    >Finance</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-header-search">
+                <div class="top-header-search-bar">
+                    <input
+                        type="text"
+                        class="top-header-search-bar-input"
+                        placeholder="Search Courses or Bootcamps"
+                    />
+                </div>
+                <div class="top-header-search-icons">
+                    <svg class="top-header-search-icons-icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-header-cart">
+                <svg class="top-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="top-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+            <button class="btn btn-secondary btn-md">Log in</button>
+            <button class="btn btn-primary btn-md">Sign up</button>
+        </header>
+
+        <header class="small-header">
+            <svg class="small-header-icon-menu" onclick="openMenu(event)">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <div class="top-header-logo"></div>
+            <div class="small-header-cart">
+                <svg class="small-header-cart-icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="small-header-cart-count"
+                    ><span class="top-header-cart-count-text">10</span></span
+                >
+            </div>
+        </header>
+
+        <section class="sidenav" id="sidenav" onclick="closeMenu(event)">
+            <div class="sidenav-main">
+                <div class="top-header-search">
+                    <div class="top-header-search-bar">
+                        <input
+                            type="text"
+                            class="top-header-search-bar-input"
+                            placeholder="Search Courses or Bootcamps"
+                        />
+                    </div>
+                    <div class="top-header-search-icons">
+                        <svg class="top-header-search-icons-icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sidenav-main-top">
+                    <a href="#" class="sidenav-main-top-login">Login</a>
+                    <a href="#" class="sidenav-main-top-signup">Sign up</a>
+                </div>
+                <div class="sidenav-main-categories">
+                    <h3 class="sidenav-main-categories-header">Categories</h3>
+                    <ul class="sidenav-main-categories-list">
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Development
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Design
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Data Science
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Digital Marketing
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                        <li class="sidenav-main-categories-list-item">
+                            <span class="sidenav-main-categories-list-item-text"
+                                >Finance
+                            </span>
+                            <svg class="sidenav-main-categories-list-item-icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-chevron-right"
+                                ></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidenav-close" id="sidenav-close">
+                <svg class="sidenav-close-icon" id="sidenav-close">
+                    <use
+                        xlink:href="img/sprite.svg#icon-cross"
+                        id="sidenav-close"
+                    ></use>
+                </svg>
+            </div>
+        </section>
+
+        <main class="main-conatiner-cart">
+            <section class="shoping-header">
+                <h2 class="shoping-header-text">Shoping Cart</h2>
+            </section>
+            <div class="cart-items">
+                <h4 class="cart-items-text">3 Courses in cart</h4>
+                <div class="cart-items-container">
+                    <div class="cart-items-card">
+                        <img
+                            src="./img/courseImages/cartImage.jpg"
+                            alt="mockdemy-cart-item"
+                            class="cart-items-card-img"
+                        />
+                        <div class="cart-items-card-text">
+                            <h5 class="cart-items-card-text-title">
+                                ML in JS with Tensorflow.js
+                            </h5>
+                            <p class="cart-items-card-text-desc">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Et quo suscipit pariatur
+                                impedit ipsum aliquid labore aut perspiciatis ex
+                                ut!
+                            </p>
+                            <button class="btn btn-md btn-tertiary">
+                                Remove
+                            </button>
+                        </div>
+                        <h4 class="cart-items-card-price">&#8377; 7000</h4>
+                    </div>
+                    <div class="cart-items-card">
+                        <img
+                            src="./img/courseImages/cartImage.jpg"
+                            alt="mockdemy-cart-item"
+                            class="cart-items-card-img"
+                        />
+                        <div class="cart-items-card-text">
+                            <h5 class="cart-items-card-text-title">
+                                ML in JS with Tensorflow.js
+                            </h5>
+                            <p class="cart-items-card-text-desc">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Et quo suscipit pariatur
+                                impedit ipsum aliquid labore aut perspiciatis ex
+                                ut!
+                            </p>
+                            <button class="btn btn-md btn-tertiary">
+                                Remove
+                            </button>
+                        </div>
+                        <h4 class="cart-items-card-price">&#8377; 7000</h4>
+                    </div>
+                    <div class="cart-items-card">
+                        <img
+                            src="./img/courseImages/cartImage.jpg"
+                            alt="mockdemy-cart-item"
+                            class="cart-items-card-img"
+                        />
+                        <div class="cart-items-card-text">
+                            <h5 class="cart-items-card-text-title">
+                                ML in JS with Tensorflow.js
+                            </h5>
+                            <p class="cart-items-card-text-desc">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Et quo suscipit pariatur
+                                impedit ipsum aliquid labore aut perspiciatis ex
+                                ut!
+                            </p>
+                            <button class="btn btn-md btn-tertiary">
+                                Remove
+                            </button>
+                        </div>
+                        <h4 class="cart-items-card-price">&#8377; 7000</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-checkout">
+                <h4 class="cart-checkout-total-price">Total : &#8377; 34567</h4>
+                <button class="btn btn-lg btn-tertiary">Checkout</button>
+            </div>
+        </main>
+    </body>
+</html>

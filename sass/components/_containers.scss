@@ -86,6 +86,7 @@
     border-top: 1px solid $line-seperator-color;
     border-right: 1px solid $line-seperator-color;
     border-bottom: 1px solid $line-seperator-color;
+    overflow: hidden;
     @include respond(tab-port) {
         border-right: none;
     }
