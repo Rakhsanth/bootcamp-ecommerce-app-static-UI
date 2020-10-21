@@ -97,6 +97,7 @@
 
     & input {
         cursor: pointer;
+        
     }
     &-label {
         padding-left: 0.5rem;
@@ -112,6 +113,9 @@
         &:focus {
             border: 2px solid $primary-btn-color;
         }
+
+       
+
 
         &::placeholder {
             font-size: 1.2rem;

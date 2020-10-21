@@ -1,0 +1,16 @@
+.field-with-button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+   
+}
+
+.btn-unroll{
+    margin-left: 8rem;
+    height: 80%;
+    width: 15%;
+    background-color: $btn-login-background;
+    color: $white-background;
+}

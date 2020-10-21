@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="top-header-logo"></div>
+      <nav class="top-header-navbar">
+        <span class="top-header-navbar-title">Categories</span>
+        <div class="top-header-navbar-dropdown">
+          <ul class="top-header-navbar-dropdown-list">
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Development</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                      ><span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses</span
+                      >
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Design</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Data Science</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Digital Marketing</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-header-navbar-dropdown-list-item">
+              <a
+                href="#"
+                class="top-header-navbar-dropdown-list-item-link"
+                onclick="handleTabs(event)"
+                ><span class="top-header-navbar-dropdown-list-item-link-text"
+                  >Finance</span
+                ></a
+              >
+              <div class="top-header-navbar-dropdown-list-item-nested-dropdown">
+                <ul
+                  class="top-header-navbar-dropdown-list-item-nested-dropdown-list"
+                >
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Courses
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item"
+                  >
+                    <a
+                      href="#"
+                      class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link"
+                    >
+                      <span
+                        class="top-header-navbar-dropdown-list-item-nested-dropdown-list-item-link-text"
+                      >
+                        Bootcamps
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="top-header-search">
+        <div class="top-header-search-bar">
+          <input
+            type="text"
+            class="top-header-search-bar-input"
+            placeholder="Search Courses or Bootcamps"
+          />
+        </div>
+        <div class="top-header-search-icons">
+          <svg class="top-header-search-icons-icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="top-header-cart">
+        <svg class="top-header-cart-icon">
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
+        </svg>
+        <span class="top-header-cart-count"
+          ><span class="top-header-cart-count-text">10</span></span
+        >
+      </div>
+      <button class="btn btn-secondary btn-md">Log in</button>
+      <button class="btn btn-primary btn-md">Sign up</button>
+    </header>
+    <main class="main-container-userProfile">
+      <div class="pubProfile-tabs">
+        <div class="ui top attached tabular menu grid three column row">
+          <div
+            id="profile-tab"
+            class="column active item pubProfile-tabs-profile"
+            onclick="handleTabs(event)"
+          >
+            <h5 class="center pubProfile-tabs-text">Profile</h5>
+          </div>
+          <div
+            id="bank-tab"
+            class="column item pubProfile-tabs-bankDT"
+            onclick="handleTabs(event)"
+          >
+            <h5 class="center pubProfile-tabs-text">Details</h5>
+          </div>
+        </div>
+        <div
+          class="ui bottom attached tab segment active pubProfile-tabContent"
+        >
+          <div class="pubProfile-tabContent-profile">
+            <div class="pubProfile-tabContent-profile-image">
+              <img
+                src="./img/courseImages/course.png"
+                alt=""
+                class="pubProfile-tabContent-profile-image-img"
+              />
+              <label
+                for="userProfile-picture"
+                class="btn btn-primary pubProfile-form-control-label text-center label-btn"
+                >Change picture</label
+              >
+              <input
+                id="userProfile-picture"
+                type="file"
+                class="pubProfile-form-control-fileInput"
+                multiple
+              />
+            </div>
+            <div class="pubProfile-form-control">
+              <label for="name" class="pubProfile-form-control-label"
+                >Name</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="pubProfile-form-control-input"
+                placeholder="Name"
+              />
+            </div>
+            <div class="pubProfile-form-control">
+              <div class="field-with-button">
+              <input
+                id="userProfile-bootcamp"
+                type="text"
+                class="pubProfile-form-control-input"
+                placeholder="bootcamp"
+              />
+              <button class="btn btn-unroll">Unroll</button>
+            </div>
+            </div>
+
+            <div class="pubProfile-form-control">
+              <div class="field-with-button">
+              <input
+                id="userProfile-course"
+                type="text"
+                class="pubProfile-form-control-input"
+                placeholder="course"
+              />
+              <button class="btn btn-unroll">Unroll</button>
+            </div>
+          </div>
+
+            <div class="pubProfile-form-control">
+              <input
+                id="userProfile-mobile"
+                type="number"
+                maxlength="10"
+                minlength="10"
+                class="pubProfile-form-control-input"
+                placeholder="Mobile"
+                />
+            </div>
+            <input
+              type="submit"
+              class="btn btn-secondary pubProfile-form-submit"
+              value="Save"
+            />
+          </div>
+          <div class="pubProfile-tabContent-bankDT">
+            <div class="pubProfile-form-control">
+              <label for="account-number" class="pubProfile-form-control-label"
+                >Account Number</label
+              >
+              <input
+                id="account-number"
+                type="text"
+                class="pubProfile-form-control-input"
+                placeholder="1234567890123456"
+              />
+            </div>
+            <div class="pubProfile-form-control">
+              <label for="ifsc" class="pubProfile-form-control-label"
+                >IFSC code</label
+              >
+              <input
+                id="ifsc"
+                type="text"
+                class="pubProfile-form-control-input"
+                placeholder="abcd0002457"
+              />
+            </div>
+            <input
+              type="submit"
+              class="btn btn-secondary pubProfile-form-submit"
+              value="Save"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      function handleTabs(event) {
+        const profileTabContent = document.querySelector(
+          ".pubProfile-tabContent-profile"
+        );
+        const bankTabContent = document.querySelector(
+          ".pubProfile-tabContent-bankDT"
+        );
+        let tabs;
+        if (event.srcElement.tagName === "H5") {
+          tabs = event.target.parentElement.children;
+          console.log("h5", tabs);
+        } else {
+          tabs = event.target.parentElement.children;
+          console.log(tabs);
+        }
+        for (let i = 0; i < tabs.length; i++) {
+          if (tabs[i].classList.contains("active"))
+            tabs[i].classList.remove("active");
+        }
+        event.target.classList.add("active");
+        if (event.srcElement.tagName === "H5") {
+          console.log(event);
+          event.target.parentElement.classList.add("active");
+          if (event.target.parentElement.id === "profile-tab") {
+            profileTabContent.style.display = "flex";
+          } else {
+            profileTabContent.style.display = "none";
+          }
+          if (event.target.parentElement.id === "bank-tab") {
+            bankTabContent.style.display = "flex";
+          } else {
+            bankTabContent.style.display = "none";
+          }
+        } else {
+          event.target.classList.add("active");
+          if (event.target.id === "profile-tab") {
+            profileTabContent.style.display = "flex";
+          } else {
+            profileTabContent.style.display = "none";
+          }
+          if (event.target.id === "bank-tab") {
+            bankTabContent.style.display = "flex";
+          } else {
+            bankTabContent.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
