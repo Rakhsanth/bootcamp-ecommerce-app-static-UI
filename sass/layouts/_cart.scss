@@ -1,0 +1,8 @@
+.main-conatiner-cart {
+    margin-top: 10rem;
+    padding: 0 10rem;
+    display: grid;
+    grid-template-rows: 15rem minmax(60rem, min-content) 30rem;
+    grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
+    grid-gap: 2rem;
+}
