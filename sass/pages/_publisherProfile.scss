@@ -41,11 +41,11 @@
 }
 
 .pubProfile-tabContent {
-    height: 60rem;
+    height: 100%;
     padding: 1rem 0;
-    @include respond(mobile) {
-        height: 75rem;
-    }
+    // @include respond(mobile) {
+    //     height: 75rem;
+    // }
 
     &-profile,
     &-bankDT,
@@ -97,7 +97,6 @@
 
     & input {
         cursor: pointer;
-        
     }
     &-label {
         padding-left: 0.5rem;
@@ -113,9 +112,6 @@
         &:focus {
             border: 2px solid $primary-btn-color;
         }
-
-       
-
 
         &::placeholder {
             font-size: 1.2rem;
@@ -163,7 +159,7 @@
 
 .pubBootcamp-create-btn {
     position: absolute;
-    top: 86%;
+    bottom: 5%;
     left: 94%;
     padding: 1rem 0;
     box-shadow: 0.5rem 0.5rem 0.5rem $line-seperator-color;

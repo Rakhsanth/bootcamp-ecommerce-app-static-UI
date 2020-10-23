@@ -48,9 +48,7 @@ a {
   padding: 2rem 0; }
 
 .login-container-facebook {
-  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
- segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
- segoe ui emoji, segoe ui symbol;
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   color: #ffffff; }
 
 .text-center {
@@ -1000,7 +998,7 @@ a {
   height: 100%;
   width: 90vw;
   display: grid;
-  grid-template-rows: min-content;
+  grid-template-rows: minmax(20rem, min-content);
   grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
   row-gap: 1rem;
   column-gap: 1rem;
@@ -1012,7 +1010,7 @@ a {
       flex-direction: column; } }
 
 .main-conatiner-bootcampForm {
-  width: 90vw;
+  width: 90%;
   padding-top: 10rem;
   margin: 0 auto;
   margin-bottom: 5rem; }
@@ -1057,6 +1055,7 @@ a {
   row-gap: 1rem;
   column-gap: 1rem;
   overflow: hidden; }
+
 .main-conatiner-cart {
   margin-top: 10rem;
   padding: 0 10rem;
@@ -1853,11 +1852,8 @@ a {
   border: 2px solid #0f7c90; }
 
 .pubProfile-tabContent {
-  height: 60rem;
+  height: 100%;
   padding: 1rem 0; }
-  @media (max-width: 37.5em) {
-    .pubProfile-tabContent {
-      height: 75rem; } }
   .pubProfile-tabContent-profile, .pubProfile-tabContent-bankDT, .pubProfile-tabContent-bootcamp {
     position: relative;
     display: none;
@@ -1940,7 +1936,7 @@ a {
 
 .pubBootcamp-create-btn {
   position: absolute;
-  top: 86%;
+  bottom: 5%;
   left: 94%;
   padding: 1rem 0;
   box-shadow: 0.5rem 0.5rem 0.5rem #dcdacb;
@@ -2345,6 +2341,7 @@ a {
   width: 15%;
   background-color: #ec5252;
   color: white; }
+
 .shoping-header {
   grid-row: 1 / 2;
   grid-column: col-start 1 / col-end 10;
