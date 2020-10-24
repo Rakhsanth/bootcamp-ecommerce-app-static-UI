@@ -19,13 +19,16 @@
     // cursor: pointer;
 }
 
-
 .bootcamp-form-content {
     margin: 2rem auto;
     width: 95%;
 }
 
 .bootcamp-form-content-basic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &-picture {
         display: flex;
         flex-direction: column;
@@ -49,5 +52,23 @@
         button:nth-last-child(1) {
             margin-left: auto;
         }
+    }
+}
+.bootcamp-form-content-tech {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-btns {
+    display: flex;
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        margin-left: auto;
+        height: 100%;
     }
 }
