@@ -1,103 +1,95 @@
 @import '../components/buttons';
 
-.login-container{
-   display: flex;
-   flex-direction: column;
-   margin-top: 55vh;
-   align-items: center;
-   justify-content: space-evenly;
-   transform: translateY(-50%);
-
-
-
-input{
-    border: 3px rgb(138,146,163) solid;
-    padding: 1.5em;
-    width: 350px;
-    height: 2em;
-    margin: 10px;
-    :invalid{
-        background-color: $btn-login-background ;
-    }
-
-}
-
-&-thirdparty{
+.login-container {
     display: flex;
-    position: relative;
     flex-direction: column;
+    margin-top: 55vh;
     align-items: center;
-    justify-items: center;
-   
-}
+    justify-content: space-evenly;
+    transform: translateY(-50%);
 
-&-form{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-items: center;
-}
-
-
-a{
-    color: $white-background;
-}
-
-&-facebook{
-   
- a{
-    padding-right: 100px;
-    margin-top: 9px;
-    
- }
- img{
-     position: relative;
-     height: 1.5rem;
-     width: 1.5rem;
-     margin-right: 20px;
-     margin-top: 8px;
-    
-     
-     
-     
-}
-}
-
-&-google{
-    a{
-        color: black;
-        padding-right: 134px;
-        margin-top: 10px;
-        
+    &-inner {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
     }
-    img{
-        height: 1.5rem;
-        width: 2.2rem;
-        margin-top: 8px;
-        margin-left: 14px;
+
+    input {
+        border: 3px rgb(138, 146, 163) solid;
+        padding: 1.5em;
+        width: 350px;
+        height: 2em;
+        margin: 1rem 0;
+        :invalid {
+            background-color: $btn-login-background;
+        }
+    }
+
+    &-thirdparty {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    &-form {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-items: center;
+    }
+
+    a {
+        color: $white-background;
+    }
+
+    &-facebook {
+        a {
+            padding-right: 100px;
+            margin-top: 9px;
+        }
+        img {
+            position: relative;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 20px;
+            margin-top: 8px;
+        }
+    }
+
+    &-google {
+        a {
+            color: black;
+            padding-right: 134px;
+            margin-top: 1rem 0;
+        }
+        img {
+            height: 1.5rem;
+            width: 2.2rem;
+            margin-top: 8px;
+            margin-left: 14px;
+        }
+    }
+
+    &-forgotpw {
+        position: relative;
+        margin-top: 1rem;
+        a {
+            color: rgb(0, 140, 159);
+        }
+    }
+
+    &-signup {
+        position: relative;
+        margin-top: 2.5rem;
+        a {
+            color: rgb(0, 140, 191);
+        }
+    }
+
+    &-message {
+        position: relative;
+        margin: 1rem 15%;
     }
 }
-
-&-forgotpw{
-    position: relative;
-    margin-top: 1rem;
-    a{
-        color:rgb(0,140,159);
-    }
-}
-
-&-signup{
-    position: relative;
-    margin-top: 2.5rem;
-    a{
-        color: rgb(0,140,191);
-    }
-}
-
-&-message{
-position: relative;
-margin-bottom: 3rem;
-margin-right: 12rem;
-}
-}
-

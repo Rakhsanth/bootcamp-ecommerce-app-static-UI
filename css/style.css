@@ -152,15 +152,6 @@ a {
     font-size: 2rem; }
   .btn-text {
     font-weight: bold; }
-  .btn-loginpage {
-    width: 350px;
-    height: 3em;
-    margin: 10px;
-    background-color: #ec5252;
-    color: white; }
-    .btn-loginpage:hover {
-      color: black;
-      border: 2px solid black; }
   .btn-facebook-login {
     display: flex;
     justify-content: center;
@@ -176,11 +167,11 @@ a {
     align-self: center;
     width: 350px;
     height: 3rem;
-    margin: 1rem;
+    margin: 1rem 0;
     background-color: white; }
   .btn-loginpage {
     height: 45px;
-    width: 95%;
+    width: 350px;
     background-color: #ec5252;
     color: white; }
     .btn-loginpage:hover {
@@ -1185,15 +1176,6 @@ a {
     font-size: 2rem; }
   .btn-text {
     font-weight: bold; }
-  .btn-loginpage {
-    width: 350px;
-    height: 3em;
-    margin: 10px;
-    background-color: #ec5252;
-    color: white; }
-    .btn-loginpage:hover {
-      color: black;
-      border: 2px solid black; }
   .btn-facebook-login {
     display: flex;
     justify-content: center;
@@ -1209,11 +1191,11 @@ a {
     align-self: center;
     width: 350px;
     height: 3rem;
-    margin: 1rem;
+    margin: 1rem 0;
     background-color: white; }
   .btn-loginpage {
     height: 45px;
-    width: 95%;
+    width: 350px;
     background-color: #ec5252;
     color: white; }
     .btn-loginpage:hover {
@@ -1248,19 +1230,23 @@ a {
   align-items: center;
   justify-content: space-evenly;
   transform: translateY(-50%); }
+  .login-container-inner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; }
   .login-container input {
     border: 3px #8a92a3 solid;
     padding: 1.5em;
     width: 350px;
     height: 2em;
-    margin: 10px; }
+    margin: 1rem 0; }
     .login-container input :invalid {
       background-color: #ec5252; }
   .login-container-thirdparty {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center;
     justify-items: center; }
   .login-container-form {
     display: flex;
@@ -1281,7 +1267,7 @@ a {
   .login-container-google a {
     color: black;
     padding-right: 134px;
-    margin-top: 10px; }
+    margin-top: 1rem 0; }
   .login-container-google img {
     height: 1.5rem;
     width: 2.2rem;
@@ -1299,8 +1285,7 @@ a {
       color: #008cbf; }
   .login-container-message {
     position: relative;
-    margin-bottom: 3rem;
-    margin-right: 12rem; }
+    margin: 1rem 15%; }
 
 .search-title {
   grid-row: 1 / 2;
@@ -1737,15 +1722,6 @@ a {
     font-size: 2rem; }
   .btn-text {
     font-weight: bold; }
-  .btn-loginpage {
-    width: 350px;
-    height: 3em;
-    margin: 10px;
-    background-color: #ec5252;
-    color: white; }
-    .btn-loginpage:hover {
-      color: black;
-      border: 2px solid black; }
   .btn-facebook-login {
     display: flex;
     justify-content: center;
@@ -1761,11 +1737,11 @@ a {
     align-self: center;
     width: 350px;
     height: 3rem;
-    margin: 1rem;
+    margin: 1rem 0;
     background-color: white; }
   .btn-loginpage {
     height: 45px;
-    width: 95%;
+    width: 350px;
     background-color: #ec5252;
     color: white; }
     .btn-loginpage:hover {
@@ -1858,6 +1834,7 @@ a {
     position: relative;
     display: none;
     margin-top: 1rem;
+    padding-bottom: 10rem;
     height: 100%;
     width: 35rem;
     margin: 0 auto;

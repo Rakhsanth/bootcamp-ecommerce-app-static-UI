@@ -107,19 +107,6 @@
         font-weight: bold;
     }
 
-    &-loginpage {
-        width: 350px;
-        height: 3em;
-        margin: 10px;
-        background-color: $btn-login-background;
-        color: $white-background;
-
-        &:hover {
-            color: black;
-            border: 2px solid black;
-        }
-    }
-
     &-facebook-login {
         display: flex;
         justify-content: center;
@@ -139,13 +126,13 @@
         align-self: center;
         width: 350px;
         height: 3rem;
-        margin: 1rem;
+        margin: 1rem 0;
         background-color: $white-background;
     }
 
     &-loginpage {
         height: 45px;
-        width: 95%;
+        width: 350px;
         background-color: $btn-login-background;
         color: $white-background;
 
@@ -155,14 +142,13 @@
         }
     }
 
-    &-explore{
+    &-explore {
         border-radius: 1rem;
         height: 4rem;
         width: 8rem;
-        
     }
 
-    &-enroll{
+    &-enroll {
         position: relative;
         height: 7rem;
         width: 10rem;
