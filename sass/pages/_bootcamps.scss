@@ -1,18 +1,43 @@
-.filter-result-card-button{
-    button{
-    background-color: rgb(255,231,153);
+.filter-result-card-button {
+    button {
+        background-color: rgb(255, 231, 153);
     }
-    a{
+    a {
         text-decoration: none;
         color: black;
     }
     position: absolute;
     margin-left: 100rem;
     margin-top: 5rem;
-    
 }
 
-.filter-result-container{
+.filter-result-container {
     display: flex;
     position: relative;
+}
+
+.publisher-bootcamps-container {
+    width: 100%;
+    max-height: 55rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid $primary-btn-color;
+    overflow-y: auto;
+
+    .pubBootcampCard-btn {
+        align-self: center;
+        padding: 1.5rem;
+        background-color: $tertiary-color-dark;
+
+        svg {
+            fill: $white-background;
+        }
+
+        &:hover {
+            background-color: $white-background;
+        }
+        &:hover svg {
+            fill: $tertiary-color-dark;
+        }
+    }
 }

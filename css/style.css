@@ -1834,7 +1834,6 @@ a {
     position: relative;
     display: none;
     margin-top: 1rem;
-    padding-bottom: 10rem;
     height: 100%;
     width: 35rem;
     margin: 0 auto;
@@ -2003,6 +2002,24 @@ a {
 .filter-result-container {
   display: flex;
   position: relative; }
+
+.publisher-bootcamps-container {
+  width: 100%;
+  max-height: 55rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #0f7c90;
+  overflow-y: auto; }
+  .publisher-bootcamps-container .pubBootcampCard-btn {
+    align-self: center;
+    padding: 1.5rem;
+    background-color: #992337; }
+    .publisher-bootcamps-container .pubBootcampCard-btn svg {
+      fill: white; }
+    .publisher-bootcamps-container .pubBootcampCard-btn:hover {
+      background-color: white; }
+    .publisher-bootcamps-container .pubBootcampCard-btn:hover svg {
+      fill: #992337; }
 
 .bootcamp-image-overlay {
   grid-row: 1 / 2;
