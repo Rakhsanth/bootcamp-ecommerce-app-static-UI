@@ -397,7 +397,7 @@
             }
 
             function handleTabs(event) {
-                // console.log(event);
+                console.log(event);
                 const profileTabContent = document.querySelector(
                     '.pubProfile-tabContent-profile'
                 );
@@ -419,7 +419,7 @@
                     if (tabs[i].classList.contains('active'))
                         tabs[i].classList.remove('active');
                 }
-                event.target.classList.add('active');
+                // event.target.classList.add('active');
                 if (event.srcElement.tagName === 'H5') {
                     console.log(event);
                     event.target.parentElement.classList.add('active');

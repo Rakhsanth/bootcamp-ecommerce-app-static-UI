@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @include respond(big-desktop) {
         font-size: 75%;
@@ -27,4 +28,7 @@ body {
 
 a {
     text-decoration: none;
+    &:hover {
+        color: inherit;
+    }
 }

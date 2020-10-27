@@ -17,8 +17,13 @@
     &::-webkit-scrollbar-thumb {
         background: $white-background;
     }
+    @include respond(mobile) {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
     @include uxDevice(touch) {
-        overflow-x: scroll;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
     @include uxDevice(pointer) {
         overflow-x: clip;

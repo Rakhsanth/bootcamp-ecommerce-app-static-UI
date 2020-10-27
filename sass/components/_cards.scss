@@ -27,6 +27,7 @@
     &:hover {
         border: 2px solid $border-top-category-cards;
         transform: scale(1.025);
+        text-decoration: none;
         z-index: 1;
     }
     &:hover &-img {
@@ -111,6 +112,7 @@
         border: 2px $border-black;
         border-radius: 5px;
         box-shadow: -0.2rem 0.3rem 1rem $text-light;
+        text-decoration: none;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
