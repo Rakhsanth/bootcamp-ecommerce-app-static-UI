@@ -29,12 +29,13 @@
         flex-direction: column;
 
         .cart-items-card {
-            height: 10rem;
+            height: 15rem;
             display: flex;
             margin: 1rem 0;
 
             &-img {
                 width: 20rem;
+                cursor: pointer;
             }
             &-text {
                 margin-left: 1rem;
