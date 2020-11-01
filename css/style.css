@@ -1449,7 +1449,7 @@ a {
   left: 75vw;
   transform: translateY(-50%);
   width: 20rem;
-  height: 20rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1458,6 +1458,10 @@ a {
   border: 1px solid #dcdacb;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.5rem 1rem #dcdacb; }
+  .course-payment .course-video {
+    width: 95%;
+    height: 50%;
+    cursor: pointer; }
   .course-payment-details {
     height: 75%;
     display: flex;
