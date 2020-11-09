@@ -4,6 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
@@ -308,6 +318,52 @@
             <div class="categories-bootcamps">
                 <!-- TO be populated by JS logic -->
             </div>
+            <div class="map-view">
+                <div class="map-view-form">
+                    <div class="map-form-control">
+                        <input
+                            type="radio"
+                            class="map-form-control-input"
+                            name="filter"
+                            id="show-all"
+                            value="all"
+                            checked
+                        />
+                        <label for="show-all" class="map-form-control-label"
+                            >All bootcapms</label
+                        >
+                    </div>
+                    <div class="map-form-control">
+                        <input
+                            type="radio"
+                            class="map-form-control-input"
+                            name="filter"
+                            id="show-near"
+                            value="near"
+                        />
+                        <label for="show-near" class="map-form-control-label"
+                            >Bootcamps near me</label
+                        >
+                    </div>
+                    <select class="ui compact selection dropdown map-select">
+                        <i class="dropdown icon map-select-icon"></i>
+                        <div class="menu">
+                            <div class="item">
+                                <option value="">Radial Distance</option>
+                            </div>
+                            <div class="item">
+                                <option value="10">10 KMs</option>
+                            </div>
+                            <div class="item">
+                                <option value="20">20 KMs</option>
+                            </div>
+                            <div class="item">
+                                <option value="30">30 KMs</option>
+                            </div>
+                        </div>
+                    </select>
+                </div>
+            </div>
             <div class="top-catagories-container">
                 <h3 class="h3-heading top-catagories-heading">
                     Top Categories
@@ -383,6 +439,8 @@
             </div>
         </main>
         <script>
+            $('.ui.dropdown').dropdown();
+
             const btnBorderBlueLight = 'rgb(40, 150, 169)';
             const lightGreySearchBarBorder = 'rgb(152, 149, 134)';
 
