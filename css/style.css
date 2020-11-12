@@ -82,6 +82,24 @@ a {
   color: #3c3b37;
   border: 1px solid; }
 
+.top-level-toop-tip {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #525252;
+  color: white;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  max-height: 150px;
+  max-width: 200px; }
+  .top-level-toop-tip .tool-tip-head {
+    font-size: 1.75rem; }
+  .top-level-toop-tip .tool-tip-text {
+    display: inline; }
+
 .btn {
   font-size: 1.2rem;
   font-weight: bold;
@@ -1162,7 +1180,13 @@ a {
         opacity: 0;
         transition: opacity 0.3s ease; }
   .map-view-form .map-select {
-    width: 16%; }
+    width: 16%;
+    display: none !important; }
+
+.map-marker:hover {
+  width: 1rem;
+  height: 1rem;
+  transform: translate(-5rem, -1rem); }
 
 .ui.selection.dropdown .menu > .item {
   font-size: 1.5rem; }
