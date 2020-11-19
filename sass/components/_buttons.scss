@@ -169,3 +169,20 @@
 .home-categories-btn {
     margin-top: 5.5rem;
 }
+
+.pubBootcampCard-btn {
+    align-self: center;
+    padding: 1.5rem;
+    background-color: $tertiary-color-dark;
+
+    svg {
+        fill: $white-background;
+    }
+
+    &:hover {
+        background-color: $white-background;
+    }
+    &:hover svg {
+        fill: $tertiary-color-dark;
+    }
+}
